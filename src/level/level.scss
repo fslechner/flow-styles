@@ -1,0 +1,32 @@
+//////////////////////////////////////////////////////////
+// Level
+//////////////////////////////////////////////////////////
+
+$factor: 100;
+
+// generate level classes
+@each $level-name in $levels {
+  .#{$prefix}#{$level}-#{$level-name} {
+    z-index: index($levels, $level-name) *
+      -$factor +
+      length($levels) *
+      $factor -
+      $factor;
+    position: relative;
+  }
+}
+
+// generate level classes with media-queries
+@each $mq in $media-queries {
+  @each $mq-name, $mq-value in $mq {
+    @each $level-name in $levels {
+      .#{$prefix}#{$level}-#{$level-name}--#{$mq-name} {
+        @media #{$mq-value} {
+          z-index: index($levels, $level-name) * -$factor + length($levels) *
+            $factor - $factor;
+          position: relative;
+        }
+      }
+    }
+  }
+}

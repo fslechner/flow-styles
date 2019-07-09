@@ -1,0 +1,61 @@
+//////////////////////////////////////////////////////////
+// Heading
+//////////////////////////////////////////////////////////
+
+// generate heading classes
+@each $style-name, $style-value in $heading-styles {
+  .#{$prefix}#{$heading}-#{$style-name} {
+    @each $attr, $value in $style-value {
+      #{$attr}: $value;
+    }
+  }
+}
+
+// generate heading classes with media queries
+@each $mq in $media-queries {
+  @each $mq-name, $mq-value in $mq {
+    @each $style-name, $style-value in $heading-styles {
+      .#{$prefix}#{$heading}-#{$style-name}--#{$mq-name} {
+        @media #{$mq-value} {
+          @each $attr, $value in $style-value {
+            #{$attr}: $value;
+          }
+        }
+      }
+    }
+  }
+}
+
+// generate heading classes with sizes
+@each $style-name, $style-value in $heading-styles {
+  @each $size-name, $size-value in $heading-sizes {
+    .#{$prefix}#{$heading}-#{$style-name}-#{$size-name} {
+      @each $attr, $value in $style-value {
+        #{$attr}: $value;
+      }
+      @each $attr, $value in $size-value {
+        #{$attr}: $value;
+      }
+    }
+  }
+}
+
+// generate heading classes with sizes and media queries
+@each $mq in $media-queries {
+  @each $mq-name, $mq-value in $mq {
+    @each $style-name, $style-value in $heading-styles {
+      @each $size-name, $size-value in $heading-sizes {
+        .#{$prefix}#{$heading}-#{$style-name}-#{$size-name}--#{$mq-name} {
+          @media #{$mq-value} {
+            @each $attr, $value in $style-value {
+              #{$attr}: $value;
+            }
+            @each $attr, $value in $size-value {
+              #{$attr}: $value;
+            }
+          }
+        }
+      }
+    }
+  }
+}

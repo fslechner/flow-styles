@@ -1,0 +1,343 @@
+//////////////////////////////////////////////////////////
+// General classname constants
+//////////////////////////////////////////////////////////
+
+$prefix: "" !default;
+
+$alignment: "al" !default;
+$background: "ba" !default;
+$border: "bo" !default;
+$cell: "ce" !default;
+$color: "co" !default;
+$custom: "cu" !default;
+$flex: "fl" !default;
+$grid: "gr" !default;
+$heading: "he" !default;
+$layout: "la" !default;
+$level: "le" !default;
+$rotation: "ro" !default;
+$spacing: "sp" !default;
+$text: "te" !default;
+$visibility: "vi" !default;
+
+//////////////////////////////////////////////////////////
+// Media Queries
+//////////////////////////////////////////////////////////
+
+// Breakpoints
+$size-xs: 480px !default;
+$size-sm: 768px !default;
+$size-md: 992px !default;
+$size-lg: 1240px !default;
+$size-xl: 1440px !default;
+$size-xxl: 1920px !default;
+
+// Media queries
+$media-queries-between: (
+  "xs": "screen and (min-width: #{$size-xs}) and (max-width: #{$size-sm - 1})",
+  "sm": "screen and (min-width: #{$size-sm}) and (max-width: #{$size-md - 1})",
+  "md": "screen and (min-width: #{$size-sm}) and (max-width: #{$size-lg - 1})",
+  "lg": "screen and (min-width: #{$size-lg}) and (max-width: #{$size-xl - 1})",
+  "xl": "screen and (min-width: #{$size-xl}) and (max-width: #{$size-xxl - 1})"
+) !default;
+
+$media-queries-lower: (
+  "xsl": "screen and (max-width: #{$size-xs - 1})",
+  "sml": "screen and (max-width: #{$size-sm - 1})",
+  "mdl": "screen and (max-width: #{$size-md - 1})",
+  "lgl": "screen and (max-width: #{$size-lg - 1})",
+  "xll": "screen and (max-width: #{$size-xl - 1})",
+  "xxll": "screen and (max-width: #{$size-xxl - 1})"
+) !default;
+
+$media-queries-upper: (
+  "xsu": "screen and (min-width: #{$size-xs})",
+  "smu": "screen and (min-width: #{$size-sm})",
+  "mdu": "screen and (min-width: #{$size-md})",
+  "lgu": "screen and (min-width: #{$size-lg})",
+  "xlu": "screen and (min-width: #{$size-xl})",
+  "xxlu": "screen and (min-width: #{$size-xxl})"
+) !default;
+
+$media-queries: (
+  $media-queries-between,
+  $media-queries-lower,
+  $media-queries-upper
+) !default;
+
+//////////////////////////////////////////////////////////
+// Border
+//////////////////////////////////////////////////////////
+
+$border-styles: (
+  one: (
+    border-bottom: 1px solid rgb(214, 31, 31)
+  ),
+  two: (
+    border-bottom: 2px solid rgb(31, 123, 214)
+  ),
+  three: (
+    border: 3px dashed rgb(31, 214, 101)
+  )
+) !default;
+
+//////////////////////////////////////////////////////////
+// Custom
+//////////////////////////////////////////////////////////
+
+$custom-styles: (
+  circle: (
+    width: 100px,
+    height: 100px,
+    background: red,
+    border-radius: 50%
+  ),
+  trapezoid: (
+    border-bottom: 100px solid red,
+    border-left: 25px solid transparent,
+    border-right: 25px solid transparent,
+    height: 0,
+    width: 100px
+  ),
+  triangle: (
+    width: 0,
+    height: 0,
+    border-left: 50px solid transparent,
+    border-right: 50px solid transparent,
+    border-bottom: 100px solid red
+  )
+) !default;
+
+//////////////////////////////////////////////////////////
+// Brand Colors (Values used in Background and Color)
+//////////////////////////////////////////////////////////
+
+$brand-colors: (
+  dark: #0e1330,
+  blue: #182257,
+  petrol: #00979e,
+  petrol60: #74c0c3,
+  petrol20: #c2e1e0,
+  silver: #d7d7d7
+) !default;
+
+//////////////////////////////////////////////////////////
+// Grids (Values used in Grid and Cell)
+//////////////////////////////////////////////////////////
+
+$grids: (
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7,
+  8,
+  9,
+  10,
+  11,
+  12,
+  13,
+  14,
+  15,
+  16,
+  17,
+  18,
+  19,
+  20
+) !default;
+
+//////////////////////////////////////////////////////////
+// Heading
+//////////////////////////////////////////////////////////
+
+$heading-styles: (
+  p: (
+    font-family: arial
+  ),
+  s: (
+    font-family: georgia
+  ),
+  t: (
+    font-family: courier
+  ),
+  q: (
+    font-family: helvetica
+  )
+) !default;
+
+$heading-sizes: (
+  h6: (
+    font-size: 1.5rem,
+    line-height: 1.5 * 1.2rem
+  ),
+  h5: (
+    font-size: 1.7rem,
+    line-height: 1.7 * 1.2rem
+  ),
+  h4: (
+    font-size: 1.9rem,
+    line-height: 1.9 * 1.2rem
+  ),
+  h3: (
+    font-size: 2.1rem,
+    line-height: 2.1 * 1.2rem
+  ),
+  h2: (
+    font-size: 2.3rem,
+    line-height: 2.3 * 1.2rem
+  ),
+  h1: (
+    font-size: 2.5rem,
+    line-height: 2.5 * 1.2rem
+  )
+) !default;
+
+//////////////////////////////////////////////////////////
+// Layout
+//////////////////////////////////////////////////////////
+
+$layout-types: (
+  one: 70px 70px auto,
+  two: auto 30%,
+  three: 20% auto 20%,
+  four: 100px auto 50vh
+) !default;
+
+//////////////////////////////////////////////////////////
+// Level
+//////////////////////////////////////////////////////////
+
+$levels: (
+  "toast",
+  "toplevel",
+  "overlay",
+  "loader",
+  "backdrop",
+  "a11y",
+  "scroll",
+  "header",
+  "content",
+  "footer",
+  "base",
+  "hidden"
+) !default;
+
+//////////////////////////////////////////////////////////
+// Rotation
+//////////////////////////////////////////////////////////
+
+$degrees: 90, 180, 270 !default;
+
+//////////////////////////////////////////////////////////
+// Spacing (Values used in Spacing, Grid-Gutters and Layout-Gutters)
+//////////////////////////////////////////////////////////
+
+$base-spacing: 0.4rem !default;
+$size-multipliers: (
+  0: 0,
+  1: 1,
+  2: 2,
+  3: 3,
+  4: 4,
+  5: 5,
+  6: 6,
+  8: 8,
+  10: 10,
+  12: 12,
+  16: 16,
+  30: 30
+) !default;
+
+//////////////////////////////////////////////////////////
+// Text
+//////////////////////////////////////////////////////////
+
+$text-styles: (
+  p: (
+    font-family: arial
+  ),
+  s: (
+    font-family: georgia
+  ),
+  t: (
+    font-family: courier
+  ),
+  q: (
+    font-family: helvetica
+  )
+) !default;
+
+$text-sizes: (
+  xs: (
+    font-size: 0.7rem,
+    line-height: 1.1rem
+  ),
+  sm: (
+    font-size: 0.9rem,
+    line-height: 0.9 * 1.2rem
+  ),
+  md: (
+    font-size: 1.1rem,
+    line-height: 1.1 * 1.2rem
+  ),
+  lg: (
+    font-size: 1.3rem,
+    line-height: 1.3 * 1.2rem
+  ),
+  xl: (
+    font-size: 1.5rem,
+    line-height: 1.5 * 1.2rem
+  ),
+  xxl: (
+    font-size: 1.7rem,
+    line-height: 1.7 * 1.2rem
+  )
+) !default;
+
+//////////////////////////////////////////////////////////
+// Export to JavaScript/TypeScript
+//////////////////////////////////////////////////////////
+/* 
+:export {
+  prefix: $prefix;
+  alignment: $alignment;
+  background: $background;
+  border: $border;
+  color: $color;
+  custom: $custom;
+  flex: $flex;
+  grid: $grid;
+  heading: $heading;
+  layout: $layout;
+  level: $level;
+  rotation: $rotation;
+  spacing: $spacing;
+  text: $text;
+  visibility: $visibility;
+  sizeXS: $size-xs;
+  sizeSM: $size-sm;
+  sizeMD: $size-md;
+  sizeLG: $size-lg;
+  sizeXL: $size-xl;
+  sizeXXL: $size-xxl;
+  mediaQueriesBetween: $media-queries-between;
+  mediaQueriesLower: $media-queries-lower;
+  mediaQueriesUpper: $media-queries-upper;
+  mediaQueries: $media-queries;
+  borderStyles: $border-styles;
+  customStyles: $custom-styles;
+  brandColors: $brand-colors;
+  grids: $grids;
+  headingStyles: $heading-styles;
+  headingSizes: $heading-sizes;
+  layout-types: $layout-types;
+  levels: $levels;
+  degrees: $degrees;
+  baseSpacing: $base-spacing;
+  sizeMultipliers: $size-multipliers;
+  textStyles: $text-styles;
+  textSizes: $text-sizes;
+}
+ */

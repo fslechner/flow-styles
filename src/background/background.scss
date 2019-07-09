@@ -1,0 +1,23 @@
+//////////////////////////////////////////////////////////
+// Background
+//////////////////////////////////////////////////////////
+
+// generate background classes
+@each $background-name, $background-value in $brand-colors {
+  .#{$prefix}#{$background}-#{$background-name} {
+    background-color: $background-value;
+  }
+}
+
+// generate background classes with media queries
+@each $mq in $media-queries {
+  @each $mq-name, $mq-value in $mq {
+    @each $background-name, $background-value in $brand-colors {
+      .#{$prefix}#{$background}-#{$background-name}--#{$mq-name} {
+        @media #{$mq-value} {
+          background-color: $background-value;
+        }
+      }
+    }
+  }
+}

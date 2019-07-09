@@ -1,0 +1,33 @@
+{
+  "name": "flow-styles",
+  "version": "0.0.1",
+  "description": "An Atomic CSS Library and Styleguidist",
+  "author": "Frank Simon Lechner",
+  "license": "MIT",
+  "main": "src/index.scss",
+  "private": true,
+  "scripts": {
+    "storybook": "start-storybook -p 6006",
+    "styleguide": "styleguidist server",
+    "styleguide:build": "styleguidist build",
+    "build-storybook": "build-storybook",
+    "lint:styles": "stylelint src/**/*.{css,scss,ts,tsx}"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.4",
+    "@storybook/addon-info": "^5.0.11",
+    "@storybook/addon-notes": "^5.1.9",
+    "@storybook/addon-viewport": "^5.0.11",
+    "@storybook/addons": "^5.0.11",
+    "@storybook/react": "^5.0.11",
+    "autoprefixer": "^9.5.1",
+    "babel-loader": "^8.0.5",
+    "css-loader": "^2.1.1",
+    "node-sass": "^4.12.0",
+    "postcss-flexbugs-fixes": "^4.1.0",
+    "postcss-loader": "^3.0.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "url-loader": "^1.1.2"
+  }
+}

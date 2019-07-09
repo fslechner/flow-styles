@@ -1,0 +1,27 @@
+//////////////////////////////////////////////////////////
+// Border
+//////////////////////////////////////////////////////////
+
+// generate border classes
+@each $style-name, $style-value in $border-styles {
+  .#{$prefix}#{$border}-#{$style-name} {
+    @each $attr, $value in $style-value {
+      #{$attr}: $value;
+    }
+  }
+}
+
+// generate border classes with media queries
+@each $mq in $media-queries {
+  @each $mq-name, $mq-value in $mq {
+    @each $style-name, $style-value in $border-styles {
+      .#{$prefix}#{$border}-#{$style-name}--#{$mq-name} {
+        @media #{$mq-value} {
+          @each $attr, $value in $style-value {
+            #{$attr}: $value;
+          }
+        }
+      }
+    }
+  }
+}

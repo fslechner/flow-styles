@@ -1,0 +1,23 @@
+//////////////////////////////////////////////////////////
+// Colors
+//////////////////////////////////////////////////////////
+
+// generate color classes
+@each $color-name, $color-value in $brand-colors {
+  .#{$prefix}#{$color}-#{$color-name} {
+    color: $color-value;
+  }
+}
+
+// generate color classes with media queries
+@each $mq in $media-queries {
+  @each $mq-name, $mq-value in $mq {
+    @each $color-name, $color-value in $brand-colors {
+      .#{$prefix}#{$color}-#{$color-name}--#{$mq-name} {
+        @media #{$mq-value} {
+          color: $color-value;
+        }
+      }
+    }
+  }
+}

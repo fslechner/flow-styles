@@ -1,0 +1,28 @@
+//////////////////////////////////////////////////////////
+// Visibility
+//////////////////////////////////////////////////////////
+
+$visibility-states: (
+  "h": none,
+  "s": inline-block
+);
+
+// generate visibility classes
+@each $visibility-name, $visibility-value in $visibility-states {
+  .#{$prefix}#{$visibility}-#{$visibility-name} {
+    display: $visibility-value;
+  }
+}
+
+// generate visibility classes with media queries
+@each $mq in $media-queries {
+  @each $mq-name, $mq-value in $mq {
+    @each $visibility-name, $visibility-value in $visibility-states {
+      .#{$prefix}#{$visibility}-#{$visibility-name}--#{$mq-name} {
+        @media #{$mq-value} {
+          display: $visibility-value;
+        }
+      }
+    }
+  }
+}

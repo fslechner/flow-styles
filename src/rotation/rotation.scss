@@ -1,0 +1,23 @@
+//////////////////////////////////////////////////////////
+// Rotation
+//////////////////////////////////////////////////////////
+
+// generate rotation classes
+@each $degree in $degrees {
+  .#{$prefix}#{$rotation}-#{$degree} {
+    transform: rotate(#{$degree}deg);
+  }
+}
+
+// generate rotation classes with media queries
+@each $mq in $media-queries {
+  @each $mq-name, $mq-value in $mq {
+    @each $degree in $degrees {
+      .#{$prefix}#{$rotation}-#{$degree}--#{$mq-name} {
+        @media #{$mq-value} {
+          transform: rotate(#{$degree}deg);
+        }
+      }
+    }
+  }
+}

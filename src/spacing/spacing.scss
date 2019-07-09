@@ -1,0 +1,121 @@
+//////////////////////////////////////////////////////////
+// Spacing
+//////////////////////////////////////////////////////////
+
+$spacing-types: (
+  "p": padding,
+  "m": margin
+);
+$spacing-edge-directions: (
+  "t": top,
+  "l": left,
+  "b": bottom,
+  "r": right
+);
+$spacing-axis-directions: "v", "h";
+
+// generate spacing classes
+// all edges one value e.g. margin: 4rem;
+@each $spacing-name, $spacing-value in $spacing-types {
+  @each $size-name, $size-value in $size-multipliers {
+    .#{$prefix}#{$spacing}-#{$spacing-name}#{$size-name} {
+      #{$spacing-value}: $size-value * $base-spacing;
+    }
+  }
+}
+
+// generate spacing classes with media queries
+// all edges one value e.g. margin: 4rem;
+@each $mq in $media-queries {
+  @each $mq-name, $mq-value in $mq {
+    @each $spacing-name, $spacing-value in $spacing-types {
+      @each $size-name, $size-value in $size-multipliers {
+        .#{$prefix}#{$spacing}-#{$spacing-name}#{$size-name}--#{$mq-name} {
+          @media #{$mq-value} {
+            #{$spacing-value}: $size-value * $base-spacing;
+          }
+        }
+      }
+    }
+  }
+}
+
+// generate spacing-edge-directions classes
+// individual edges individual values e.g. padding-top: 8rem; padding-left: 4rem;
+@each $spacing-name, $spacing-value in $spacing-types {
+  @each $direction-name, $direction-value in $spacing-edge-directions {
+    @each $size-name, $size-value in $size-multipliers {
+      .#{$prefix}#{$spacing}-#{$spacing-name}#{$direction-name}#{$size-name} {
+        #{$spacing-value}-#{$direction-value}: $size-value * $base-spacing;
+      }
+    }
+  }
+}
+
+// generate spacing-edge-directions classes with media queries
+// individual edges individual values e.g. padding-top: 8rem; padding-left: 4rem;
+@each $mq in $media-queries {
+  @each $mq-name, $mq-value in $mq {
+    @each $spacing-name, $spacing-value in $spacing-types {
+      @each $direction-name, $direction-value in $spacing-edge-directions {
+        @each $size-name, $size-value in $size-multipliers {
+          .#{$prefix}#{$spacing}-#{$spacing-name}#{$direction-name}#{$size-name}--#{$mq-name} {
+            @media #{$mq-value} {
+              #{$spacing-value}-#{$direction-value}: $size-value * $base-spacing;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// generate spacing-axis-directions classes
+// horizontal or vertical axis e.g. padding: 8rem 4rem; or margin: 2rem inerhit;
+@each $spacing-name, $spacing-value in $spacing-types {
+  @each $direction-name, $direction-value in $spacing-axis-directions {
+    @each $size-name, $size-value in $size-multipliers {
+      @if $direction-name == "v" {
+        .#{$prefix}#{$spacing}-#{$spacing-name}#{$direction-name}#{$size-name} {
+          #{$spacing-value}-top: $size-value * $base-spacing;
+          #{$spacing-value}-bottom: $size-value * $base-spacing;
+        }
+      }
+      @if $direction-name == "h" {
+        .#{$prefix}#{$spacing}-#{$spacing-name}#{$direction-name}#{$size-name} {
+          #{$spacing-value}-left: $size-value * $base-spacing;
+          #{$spacing-value}-right: $size-value * $base-spacing;
+        }
+      }
+    }
+  }
+}
+
+// generate spacing-axis-directions classes with media queries
+// horizontal or vertical axis e.g. padding: inerhit 4rem; or margin: 2rem inerhit;
+@each $mq in $media-queries {
+  @each $mq-name, $mq-value in $mq {
+    @each $spacing-name, $spacing-value in $spacing-types {
+      @each $direction-name in $spacing-axis-directions {
+        @each $size-name, $size-value in $size-multipliers {
+          @if $direction-name == "v" {
+            .#{$prefix}#{$spacing}-#{$spacing-name}#{$direction-name}#{$size-name}--#{$mq-name} {
+              @media #{$mq-value} {
+                #{$spacing-value}-top: $size-value * $base-spacing;
+                #{$spacing-value}-bottom: $size-value * $base-spacing;
+              }
+            }
+          }
+          @if $direction-name == "h" {
+            .#{$prefix}#{$spacing}-#{$spacing-name}#{$direction-name}#{$size-name}--#{$mq-name} {
+              @media #{$mq-value} {
+                #{$spacing-value}-left: $size-value * $base-spacing;
+                #{$spacing-value}-right: $size-value * $base-spacing;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

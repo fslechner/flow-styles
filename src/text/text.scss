@@ -1,0 +1,120 @@
+//////////////////////////////////////////////////////////
+// Text
+//////////////////////////////////////////////////////////
+
+$text-decorators: (
+  "u": (
+    text-decoration: underline
+  ),
+  "lt": (
+    text-decoration: line-through
+  ),
+  "i": (
+    font-style: italic
+  ),
+  "b": (
+    font-weight: bold
+  )
+);
+
+// generate text classes
+@each $text-name, $text-value in $text-styles {
+  .#{$prefix}#{$text}-#{$text-name} {
+    @each $attr, $value in $text-value {
+      #{$attr}: $value;
+    }
+  }
+}
+
+// generate text classes with media queries
+@each $mq in $media-queries {
+  @each $mq-name, $mq-value in $mq {
+    @each $text-name, $text-value in $text-styles {
+      .#{$prefix}#{$text}-#{$text-name}--#{$mq-name} {
+        @media #{$mq-value} {
+          @each $attr, $value in $text-value {
+            #{$attr}: $value;
+          }
+        }
+      }
+    }
+  }
+}
+
+// generate text classes with sizes
+@each $text-name, $text-value in $text-styles {
+  @each $text-sizename, $text-sizevalue in $text-sizes {
+    .#{$prefix}#{$text}-#{$text-name}-#{$text-sizename} {
+      @each $attr, $value in $text-value {
+        #{$attr}: $value;
+      }
+      @each $attr, $value in $text-sizevalue {
+        #{$attr}: $value;
+      }
+    }
+  }
+}
+
+// generate text classes with sizes and media queries
+@each $mq in $media-queries {
+  @each $mq-name, $mq-value in $mq {
+    @each $text-name, $text-value in $text-styles {
+      @each $text-sizename, $text-sizevalue in $text-sizes {
+        .#{$prefix}#{$text}-#{$text-name}-#{$text-sizename}--#{$mq-name} {
+          @media #{$mq-value} {
+            @each $attr, $value in $text-value {
+              #{$attr}: $value;
+            }
+            @each $attr, $value in $text-sizevalue {
+              #{$attr}: $value;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// generate text classes with sizes and decorators
+@each $text-name, $text-value in $text-styles {
+  @each $text-sizename, $text-sizevalue in $text-sizes {
+    @each $decorator-name, $decorator-value in $text-decorators {
+      .#{$prefix}#{$text}-#{$text-name}-#{$text-sizename}-#{$decorator-name} {
+        @each $attr, $value in $text-value {
+          #{$attr}: $value;
+        }
+        @each $attr, $value in $text-sizevalue {
+          #{$attr}: $value;
+        }
+        @each $attr, $value in $decorator-value {
+          #{$attr}: $value;
+        }
+      }
+    }
+  }
+}
+
+// generate text classes with sizes, decorators and media queries
+@each $mq in $media-queries {
+  @each $mq-name, $mq-value in $mq {
+    @each $text-name, $text-value in $text-styles {
+      @each $text-sizename, $text-sizevalue in $text-sizes {
+        @each $decorator-name, $decorator-value in $text-decorators {
+          .#{$prefix}#{$text}-#{$text-name}-#{$text-sizename}-#{$decorator-name}--#{$mq-name} {
+            @media #{$mq-value} {
+              @each $attr, $value in $text-value {
+                #{$attr}: $value;
+              }
+              @each $attr, $value in $text-sizevalue {
+                #{$attr}: $value;
+              }
+              @each $attr, $value in $decorator-value {
+                #{$attr}: $value;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
