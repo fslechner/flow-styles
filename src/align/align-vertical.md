@@ -1,64 +1,39 @@
 # Align Vertical
 
-Because Align uses CSS-Flexbox you have to set **display: flex;** like shown below to use Alignment.
-
-```html
-<div class="al">Item</div>
-```
-
-```css
-.al {
-  display: flex;
-}
-```
-
-## Vertical Alignment Options
+## Options
 
 - top (t)
 - center (c)
 - bottom (b)
+- stretch (s)
+- baseline (bl)
 
-### Align Vertical Top (**al al-vt**)
-
-```html
-<div class="al al-vt">Item</div>
-```
-
-```css
-.al {
-  display: flex;
-}
-.al-vt {
-  align-items: flex-start;
-}
-```
-
-### Align Vertical Center (**al al-vc**)
+### Align Vertical Top: **al-vt**
 
 ```html
-<div class="al al-vc">Item</div>
+<div class="al-vt">Item</div>
 ```
 
-```css
-.al {
-  display: flex;
-}
-.al-vc {
-  align-items: center;
-}
-```
-
-### Align Vertical Bottom (**al al-vb**)
+### Align Vertical Center: **al-vc**
 
 ```html
-<div class="al al-vb">Item</div>
+<div class="al-vc">Item</div>
 ```
 
-```css
-.al {
-  display: flex;
-}
-.al-vb {
-  align-items: flex-start;
-}
+### Align Vertical Bottom: **al-vb**
+
+```html
+<div class="al-vb">Item</div>
+```
+
+### Align Vertical Stretch: **al-vs**
+
+```html
+<div class="al-vs">Item</div>
+```
+
+### Align Vertical Baseline: **al-vbl**
+
+```html
+<div class="al-vbl">Item</div>
 ```

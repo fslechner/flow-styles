@@ -1,9 +1,5 @@
-- make Text size optional
-- complete grid md
-- write layout md
-- write spacing md
+- make Text and heading options optional
 - root docs md
 - test scss variables in storybook
 - poc automate storybook
-- import md files in storybook
-- add si and sb to visibility states
+- add upper and lower case to text decoration

@@ -1,22 +1,8 @@
-# Alignment Responsive
+# Align Responsive
 
-Set horizontal and vertical alignment depending on Viewport-Width. Because Alignment uses CSS-Flexbox you have to set **display: flex;** like shown below to use Alignment.
-
-```html
-<div class="al">Item</div>
-```
-
-```css
-.al {
-  display: flex;
-}
-```
-
-## Media Queries
+## Options
 
 Every \$media-queries entry is possible to use. Predefined breakpoints are xsl, xs, xsu, sml, sm, smu, mdl, md, mdu, lgl, lg, lgu, xll, xl, xlu, xxll, xxlu
-
-## Examples
 
 ### Align Horizontal Center Lower Breakpoint SM: **al al-hc--sml**
 

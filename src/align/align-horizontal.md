@@ -1,112 +1,46 @@
-# Alignment Horizontal
+# Align Horizontal
 
-Because Alignment uses CSS-Flexbox you have to set **display: flex;** like shown below to use Alignment.
-
-```html
-<div class="al">Item</div>
-```
-
-```css
-.al {
-  display: flex;
-}
-```
-
-## Horizontal Aligment Options
+## Options
 
 - left (l)
 - center (c)
 - right (r)
-- around (a)
-- between (b)
-- evenly (e)
+- space-around (sa)
+- space-between (sb)
+- space-evenly (se)
 
-### Align Horizontal Left: **al al-hl**
-
-```html
-<div class="al al-hl">Item</div>
-```
-
-```css
-.al {
-  display: flex;
-}
-.al-hl {
-  justify-content: flex-start;
-}
-```
-
-### Align Horizontal Center: **al al-hc**
+### Align Horizontal Left: **al-hl**
 
 ```html
-<div class="al al-hc">Item</div>
+<div class="al-hl">Item</div>
 ```
 
-```css
-.al {
-  display: flex;
-}
-.al-hc {
-  justify-content: center;
-}
-```
-
-## Align Horizontal Right: **al al-hr**
+### Align Horizontal Center: **al-hc**
 
 ```html
-<div class="al al-hr">Item</div>
+<div class="al-hc">Item</div>
 ```
 
-```css
-.al {
-  display: flex;
-}
-.al-hr {
-  justify-content: flex-end;
-}
-```
-
-## Align Horizontal Around: **al al-ha**
+## Align Horizontal Right: **al-hr**
 
 ```html
-<div class="al al-ha">Item</div>
+<div class="al-hr">Item</div>
 ```
 
-```css
-.al {
-  display: flex;
-}
-.al-ha {
-  justify-content: space-around;
-}
-```
-
-## Align Horizontal Between: **al al-hb**
+## Align Horizontal Space-Around: **al-hsa**
 
 ```html
-<div class="al al-hb">Item</div>
+<div class="al-hsa">Item</div>
 ```
 
-```css
-.al {
-  display: flex;
-}
-.al-hb {
-  justify-content: space-between;
-}
-```
-
-## Align Horizontal Evenly: **al al-he**
+## Align Horizontal Space-Between: **al-hsb**
 
 ```html
-<div class="al al-he">Item</div>
+<div class="al-hsb">Item</div>
 ```
 
-```css
-.al {
-  display: flex;
-}
-.al-he {
-  justify-content: space-evenly;
-}
+## Align Horizontal Space-Evenly: **al-hse**
+
+```html
+<div class="al-hse">Item</div>
 ```
