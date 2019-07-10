@@ -1,5 +1,7 @@
 # Align Direction
 
+Set flex-direction to a Flexbox-Container.
+
 ## Options
 
 - horizontal (h)

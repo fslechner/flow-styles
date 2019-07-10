@@ -44,7 +44,7 @@ $gutter-directions: (
   "v": "grid-row-gap"
 );
 
-// generate grid-gutters (same value for both directions)
+// generate grid-gutters (same gutter for both directions)
 @each $gutter-level, $gutter-multiplier in $size-multipliers {
   .#{$prefix}#{$layout}-g#{$gutter-level} {
     grid-column-gap: $gutter-multiplier * $base-spacing;
@@ -52,7 +52,7 @@ $gutter-directions: (
   }
 }
 
-// generate grid-gutters with media queries (individual values for both directions)
+// generate grid-gutters with media queries (same gutter for both directions)
 @each $mq in $media-queries {
   @each $mq-name, $mq-value in $mq {
     @each $gutter-level, $gutter-multiplier in $size-multipliers {
@@ -66,7 +66,7 @@ $gutter-directions: (
   }
 }
 
-// generate grid-gutters with directions
+// generate grid-gutters with directions (individual gutter for each directions)
 @each $direction-name, $direction-value in $gutter-directions {
   @each $gutter-level, $gutter-multiplier in $size-multipliers {
     .#{$prefix}#{$layout}-#{$direction-name}g#{$gutter-level} {
@@ -75,7 +75,7 @@ $gutter-directions: (
   }
 }
 
-// generate grid-gutters with directions and media queries
+// generate grid-gutters with directions and media queries (individual gutter for each directions)
 @each $mq in $media-queries {
   @each $mq-name, $mq-value in $mq {
     @each $direction-name, $direction-value in $gutter-directions {

@@ -1,5 +1,7 @@
 # Align Horizontal
 
+Set justify-content to a Flexbox-Container.
+
 ## Options
 
 - left (l)

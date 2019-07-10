@@ -1,0 +1,136 @@
+//////////////////////////////////////////////////////////
+// General classname constants
+//////////////////////////////////////////////////////////
+
+$prefix: "" !default;
+
+$align: "al" !default;
+$alignitem: "ali" !default;
+$background: "ba" !default;
+$border: "bo" !default;
+$color: "co" !default;
+$custom: "cu" !default;
+$heading: "he" !default;
+$layout: "la" !default;
+$layoutitem: "lai" !default;
+$level: "le" !default;
+$position: "po" !default;
+$rotation: "ro" !default;
+$spacing: "sp" !default;
+$text: "te" !default;
+$visibility: "vi" !default;
+
+//////////////////////////////////////////////////////////
+// Media Queries
+//////////////////////////////////////////////////////////
+
+// Breakpoints
+$size-xs: 480px !default;
+$size-sm: 768px !default;
+$size-md: 992px !default;
+$size-lg: 1240px !default;
+$size-xl: 1440px !default;
+$size-xxl: 1920px !default;
+
+// Media queries
+$media-queries-between: (
+  "xs": "screen and (min-width: #{$size-xs}) and (max-width: #{$size-sm - 1})",
+  "sm": "screen and (min-width: #{$size-sm}) and (max-width: #{$size-md - 1})",
+  "md": "screen and (min-width: #{$size-sm}) and (max-width: #{$size-lg - 1})",
+  "lg": "screen and (min-width: #{$size-lg}) and (max-width: #{$size-xl - 1})",
+  "xl": "screen and (min-width: #{$size-xl}) and (max-width: #{$size-xxl - 1})"
+) !default;
+
+$media-queries-lower: (
+  "xsl": "screen and (max-width: #{$size-xs - 1})",
+  "sml": "screen and (max-width: #{$size-sm - 1})",
+  "mdl": "screen and (max-width: #{$size-md - 1})",
+  "lgl": "screen and (max-width: #{$size-lg - 1})",
+  "xll": "screen and (max-width: #{$size-xl - 1})",
+  "xxll": "screen and (max-width: #{$size-xxl - 1})"
+) !default;
+
+$media-queries-upper: (
+  "xsu": "screen and (min-width: #{$size-xs})",
+  "smu": "screen and (min-width: #{$size-sm})",
+  "mdu": "screen and (min-width: #{$size-md})",
+  "lgu": "screen and (min-width: #{$size-lg})",
+  "xlu": "screen and (min-width: #{$size-xl})",
+  "xxlu": "screen and (min-width: #{$size-xxl})"
+) !default;
+
+$media-queries: (
+  $media-queries-between,
+  $media-queries-lower,
+  $media-queries-upper
+) !default;
+
+//////////////////////////////////////////////////////////
+// Layout gutters
+//////////////////////////////////////////////////////////
+$base-spacing: 0.4rem !default;
+$size-multipliers: (
+  0: 0,
+  1: 1,
+  2: 2,
+  3: 3,
+  4: 4,
+  5: 5,
+  6: 6,
+  8: 8,
+  10: 10,
+  12: 12,
+  16: 16,
+  30: 30
+) !default;
+
+$gutter-directions: (
+  "h": "grid-column-gap",
+  "v": "grid-row-gap"
+);
+
+// generate grid-gutters (same gutter for both directions)
+@each $gutter-level, $gutter-multiplier in $size-multipliers {
+  .#{$prefix}#{$layout}-g#{$gutter-level} {
+    grid-column-gap: $gutter-multiplier * $base-spacing;
+    grid-row-gap: $gutter-multiplier * $base-spacing;
+  }
+}
+
+// generate grid-gutters with media queries (same gutter for both directions)
+@each $mq in $media-queries {
+  @each $mq-name, $mq-value in $mq {
+    @each $gutter-level, $gutter-multiplier in $size-multipliers {
+      .#{$prefix}#{$layout}-g#{$gutter-level}--#{$mq-name} {
+        @media #{$mq-value} {
+          grid-column-gap: $gutter-multiplier * $base-spacing;
+          grid-row-gap: $gutter-multiplier * $base-spacing;
+        }
+      }
+    }
+  }
+}
+
+// generate grid-gutters with directions (individual gutter for each directions)
+@each $direction-name, $direction-value in $gutter-directions {
+  @each $gutter-level, $gutter-multiplier in $size-multipliers {
+    .#{$prefix}#{$layout}-#{$direction-name}g#{$gutter-level} {
+      #{$direction-value}: $gutter-multiplier * $base-spacing;
+    }
+  }
+}
+
+// generate grid-gutters with directions and media queries (individual gutter for each directions)
+@each $mq in $media-queries {
+  @each $mq-name, $mq-value in $mq {
+    @each $direction-name, $direction-value in $gutter-directions {
+      @each $gutter-level, $gutter-multiplier in $size-multipliers {
+        .#{$prefix}#{$layout}-#{$direction-name}g#{$gutter-level}--#{$mq-name} {
+          @media #{$mq-value} {
+            #{$direction-value}: $gutter-multiplier * $base-spacing;
+          }
+        }
+      }
+    }
+  }
+}

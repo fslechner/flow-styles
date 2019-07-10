@@ -1,16 +1,6 @@
 # Flex Directions
 
-Set Flexbox to an element to change Flex-Direction or setting Flex-Wrap. Therefore you have to set **display: flex** to use Flexbox.
-
-```html
-<div class="fl">Item</div>
-```
-
-```css
-.fl {
-  display: flex;
-}
-```
+Set flex-direction to a Flexbox-Container.
 
 ## Directions
 
