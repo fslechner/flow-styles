@@ -1,7 +1,6 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
-import rotationDegrees from "./rotation-degrees.md";
-import rotationResponsive from "./rotation-responsive.md";
+import rotation from "./rotation.md";
 
 storiesOf("Rotation", module).add(
   "Rotation Degrees",
@@ -14,20 +13,18 @@ storiesOf("Rotation", module).add(
     </div>
   ),
   {
-    notes: { markdown: rotationDegrees }
+    notes: { markdown: rotation }
   }
 );
 
 storiesOf("Rotation", module).add(
   "Rotation Responsive",
   () => (
-    <div>
-      <div className="ro-90--sml ro-180--smu ro-box sp-mb5">
-        Rotation by Viewport
-      </div>
+    <div className="ro-90--sml ro-180--smu ro-box sp-mb5">
+      Rotation by Viewport
     </div>
   ),
   {
-    notes: { markdown: rotationResponsive }
+    notes: { markdown: rotation }
   }
 );

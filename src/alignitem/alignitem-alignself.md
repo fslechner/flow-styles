@@ -4,11 +4,17 @@ Set align-self to a Flexbox-Item.
 
 ## Options
 
+### Alignments
+
 - top (t)
 - center (c)
 - bottom (b)
 - stretch (s)
 - baseline (bl)
+
+### Media Queries
+
+Every \$media-queries entry is possible to use. Predefined breakpoints are xsl, xs, xsu, sml, sm, smu, mdl, md, mdu, lgl, lg, lgu, xll, xl, xlu, xxll, xxlu
 
 ## Static Examples
 
@@ -44,7 +50,13 @@ Set align-self to a Flexbox-Item.
 
 ## Responsive Examples
 
-### Alignitem align right lower and align bottom upper breakpoint sml: **ali-ar--sml ali-sb--smu**
+### Alignitem align right between breakpoint sm and md: **ali-ar--sm**
+
+```html
+<div class="ali-ar--sm">Item</div>
+```
+
+### Alignitem align right lower and bottom upper breakpoint sm: **ali-ar--sml ali-sb--smu**
 
 ```html
 <div class="ali-ar--sml ali-sb--smu">Item</div>

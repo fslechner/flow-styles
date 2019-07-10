@@ -2,7 +2,9 @@
 
 Set Heading Size to an element which shall be styled like a heading.
 
-## Size Options
+## Options
+
+### Size Options
 
 Every \$heading-sizes are possible to use. Predefined sizes are:
 
@@ -12,6 +14,12 @@ Every \$heading-sizes are possible to use. Predefined sizes are:
 - h4
 - h5
 - h6
+
+### Media Queries
+
+Every \$media-queries entry is possible to use. Predefined breakpoints are xsl, xs, xsu, sml, sm, smu, mdl, md, mdu, lgl, lg, lgu, xll, xl, xlu, xxll, xxlu
+
+## Static Examples
 
 ### Heading style primary size h1: **he-p-h1**
 
@@ -48,3 +56,5 @@ Every \$heading-sizes are possible to use. Predefined sizes are:
 ```html
 <div class="he-p-h6">Item</div>
 ```
+
+## Responsive Examples

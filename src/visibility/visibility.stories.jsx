@@ -1,7 +1,6 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
-import visibilityState from "./visibility-state.md";
-import visibilityResponsive from "./visibility-responsive.md";
+import visibility from "./visibility.md";
 
 storiesOf("Visibility", module).add(
   "Visibility State",
@@ -15,7 +14,7 @@ storiesOf("Visibility", module).add(
     </div>
   ),
   {
-    notes: { markdown: visibilityState }
+    notes: { markdown: visibility }
   }
 );
 
@@ -29,6 +28,6 @@ storiesOf("Visibility", module).add(
     </div>
   ),
   {
-    notes: { markdown: visibilityResponsive }
+    notes: { markdown: visibility }
   }
 );

@@ -1,7 +1,6 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
-import levelName from "./level-name.md";
-import levelResponsive from "./level-responsive.md";
+import level from "./level.md";
 
 storiesOf("Level", module).add(
   "Level Name",
@@ -46,7 +45,7 @@ storiesOf("Level", module).add(
     </div>
   ),
   {
-    notes: { markdown: levelName }
+    notes: { markdown: level }
   }
 );
 
@@ -59,6 +58,6 @@ storiesOf("Level", module).add(
     </div>
   ),
   {
-    notes: { markdown: levelResponsive }
+    notes: { markdown: level }
   }
 );

@@ -2,7 +2,6 @@
 // Alignitem Alignself
 //////////////////////////////////////////////////////////
 $item-alignments: (
-  "a": auto,
   "t": flex-start,
   "b": flex-end,
   "c": center,
@@ -12,8 +11,8 @@ $item-alignments: (
 
 // generate alignitem alignself classes
 @each $al-name, $al-value in $item-alignments {
-  .#{$prefix}#{$align}-a#{$al-name} {
-    flex-direction: $al-value;
+  .#{$prefix}#{$alignitem}-a#{$al-name} {
+    align-self: $al-value;
   }
 }
 
@@ -21,7 +20,7 @@ $item-alignments: (
 @each $mq in $media-queries {
   @each $mq-name, $mq-value in $mq {
     @each $al-name, $al-value in $item-alignments {
-      .#{$prefix}#{$align}-a#{$al-name}--#{$mq-name} {
+      .#{$prefix}#{$alignitem}-a#{$al-name}--#{$mq-name} {
         @media #{$mq-value} {
           align-self: $al-value;
         }

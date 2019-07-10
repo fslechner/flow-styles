@@ -1,25 +1,26 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
-import borderStyle from "./border-style.md";
-import borderResponsive from "./border-responsive.md";
+import border from "./border.md";
 
 storiesOf("Border", module).add(
   "Border Style",
   () => (
     <div>
-      <div className="bo-one sp-m4">
-        <b>bo-one</b>
-      </div>
-      <div className="bo-two sp-m4">
-        <b>bo-two</b>
-      </div>
-      <div className="bo-three sp-m4">
-        <b>bo-three</b>
+      <div>
+        <div className="bo-one sp-m4">
+          <b>bo-one</b>
+        </div>
+        <div className="bo-two sp-m4">
+          <b>bo-two</b>
+        </div>
+        <div className="bo-three sp-m4">
+          <b>bo-three</b>
+        </div>
       </div>
     </div>
   ),
   {
-    notes: { markdown: borderStyle }
+    notes: { markdown: border }
   }
 );
 
@@ -33,6 +34,6 @@ storiesOf("Border", module).add(
     </div>
   ),
   {
-    notes: { markdown: borderResponsive }
+    notes: { markdown: border }
   }
 );

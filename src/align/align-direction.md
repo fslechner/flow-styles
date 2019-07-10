@@ -4,15 +4,23 @@ Set flex-direction to a Flexbox-Container.
 
 ## Options
 
+### Directions
+
 - horizontal (h)
 - horizontal reverse (hr)
 - vertical (v)
 - vertical reverse (vr)
 
-## Wrap Options
+### Wrap
 
 - wrap (w)
 - wrap reverse (wr)
+
+### Media Queries
+
+Every \$media-queries entry is possible to use. Predefined breakpoints are xsl, xs, xsu, sml, sm, smu, mdl, md, mdu, lgl, lg, lgu, xll, xl, xlu, xxll, xxlu
+
+## Static Examples
 
 ### Align Direction Horizontal: **al-dh**
 
@@ -84,4 +92,18 @@ Set flex-direction to a Flexbox-Container.
 
 ```html
 <div class="al-dvrwr">Item</div>
+```
+
+## Responsive Examples
+
+### Align direction vertical between breakpoint sm and md: **al-vc--sm**
+
+```html
+<div class="al-dv--sm">Item</div>
+```
+
+### Align direction vertical lower and horizontal upper breakpoint sm: **al-dv--sml al-dh--smu**
+
+```html
+<div class="al-dv--sml al-dh--smu">Item</div>
 ```

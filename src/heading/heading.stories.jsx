@@ -2,7 +2,6 @@ import React from "react";
 import { storiesOf } from "@storybook/react";
 import headingStyle from "./heading-style.md";
 import headingSize from "./heading-size.md";
-import headingResponsive from "./heading-responsive.md";
 
 storiesOf("Heading", module).add(
   "Heading Styles",
@@ -44,7 +43,7 @@ storiesOf("Heading", module).add(
   }
 );
 
-storiesOf("Heading", module).add(
+/* storiesOf("Heading", module).add(
   "Heading Responsive",
   () => (
     <div>
@@ -56,4 +55,4 @@ storiesOf("Heading", module).add(
   {
     notes: { markdown: headingResponsive }
   }
-);
+); */
