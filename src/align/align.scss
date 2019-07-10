@@ -1,15 +1,17 @@
 //////////////////////////////////////////////////////////
 // Align
 //////////////////////////////////////////////////////////
-@import "alignment-content";
-@import "alignment-direction";
-@import "alignment-horizontal";
-@import "alignment-vertical";
+@import "align-content";
+@import "align-direction";
+@import "align-horizontal";
+@import "align-vertical";
 
+// not in docs!
 .#{$prefix}#{$align} {
   display: flex;
 }
 
+// not in docs!
 .#{$prefix}#{$align}-c {
   display: flex;
   align-items: center;

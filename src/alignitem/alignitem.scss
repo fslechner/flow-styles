@@ -1,19 +1,7 @@
 //////////////////////////////////////////////////////////
 // Alignitem
 //////////////////////////////////////////////////////////
-$item-options: (
-  "o": order,
-  "g": flex-grow,
-  "s": flex-shrink,
-  "b": flex-basis,
-  "a": align-self
-);
-
-$item-alignments: (
-  "a": auto,
-  "t": flex-start,
-  "b": flex-end,
-  "c": center,
-  "bl": baseline,
-  "s": stretch
-);
+@import "alignitem-alignself";
+@import "alignitem-order";
+@import "alignitem-grow";
+@import "alignitem-shrink";

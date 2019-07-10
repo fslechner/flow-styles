@@ -9,3 +9,23 @@ $item-alignments: (
   "bl": baseline,
   "s": stretch
 );
+
+// generate alignitem alignself classes
+@each $al-name, $al-value in $item-alignments {
+  .#{$prefix}#{$align}-a#{$al-name} {
+    flex-direction: $al-value;
+  }
+}
+
+// generate alignitem alignself with media queries
+@each $mq in $media-queries {
+  @each $mq-name, $mq-value in $mq {
+    @each $al-name, $al-value in $item-alignments {
+      .#{$prefix}#{$align}-a#{$al-name}--#{$mq-name} {
+        @media #{$mq-value} {
+          align-self: $al-value;
+        }
+      }
+    }
+  }
+}
