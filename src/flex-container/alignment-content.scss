@@ -1,0 +1,31 @@
+//////////////////////////////////////////////////////////
+// Alignment Content
+//////////////////////////////////////////////////////////
+$content-alignments: (
+  "l": flex-start,
+  "r": flex-end,
+  "c": center,
+  "s": stretch,
+  "b": space-between,
+  "a": space-around
+);
+
+// generate vertical alignment classes
+@each $al-name, $al-value in $content-alignments {
+  .#{$prefix}#{$alignment}-v#{$al-name} {
+    align-items: $al-value;
+  }
+}
+
+// generate vertical alignment classes with media queries
+@each $mq in $media-queries {
+  @each $mq-name, $mq-value in $mq {
+    @each $al-name, $al-value in $content-alignments {
+      .#{$prefix}#{$alignment}-v#{$al-name}--#{$mq-name} {
+        @media #{$mq-value} {
+          align-items: $al-value;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,65 @@
+//////////////////////////////////////////////////////////
+// Flex Direction
+//////////////////////////////////////////////////////////
+
+$flex-directions: (
+  "h": row,
+  "hr": row-reverse,
+  "v": column,
+  "vr": column-reverse
+);
+
+.#{$prefix}#{$flex} {
+  display: flex;
+}
+
+// generate flex classes
+@each $direction-name, $direction-value in $flex-directions {
+  .#{$prefix}#{$alignment}-#{$direction-name} {
+    flex-direction: $direction-value;
+  }
+}
+
+// generate flex classes with media queries
+@each $mq in $media-queries {
+  @each $mq-name, $mq-value in $mq {
+    @each $direction-name, $direction-value in $flex-directions {
+      .#{$prefix}#{$alignment}-#{$direction-name}--#{$mq-name} {
+        @media #{$mq-value} {
+          flex-direction: $direction-value;
+        }
+      }
+    }
+  }
+}
+
+$wrap-types: (
+  "w": wrap,
+  "wr": wrap-reverse
+);
+
+// generate flex classes with wrap
+@each $wrap-name, $wrap-value in $wrap-types {
+  @each $direction-name, $direction-value in $flex-directions {
+    .#{$prefix}#{$flex}-#{$direction-name}#{$wrap-name} {
+      flex-direction: $direction-value;
+      flex-wrap: $wrap-value;
+    }
+  }
+}
+
+// generate flex classes with wrap and media queries
+@each $mq in $media-queries {
+  @each $mq-name, $mq-value in $mq {
+    @each $wrap-name, $wrap-value in $wrap-types {
+      @each $direction-name, $direction-value in $flex-directions {
+        .#{$prefix}#{$flex}-#{$direction-name}#{$wrap-name}--#{$mq-name} {
+          @media #{$mq-value} {
+            flex-direction: $direction-value;
+            flex-wrap: $wrap-value;
+          }
+        }
+      }
+    }
+  }
+}

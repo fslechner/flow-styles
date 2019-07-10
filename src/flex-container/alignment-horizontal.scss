@@ -1,0 +1,32 @@
+//////////////////////////////////////////////////////////
+// Alignment Horizontal
+//////////////////////////////////////////////////////////
+
+$horizontal-alignments: (
+  "l": flex-start,
+  "c": center,
+  "r": flex-end,
+  "b": space-between,
+  "a": space-around,
+  "e": space-evenly
+);
+
+// generate horizontal alignment classes
+@each $al-name, $al-value in $horizontal-alignments {
+  .#{$prefix}#{$alignment}-h#{$al-name} {
+    justify-content: $al-value;
+  }
+}
+
+// generate horizontal alignment classes with media queries
+@each $mq in $media-queries {
+  @each $mq-name, $mq-value in $mq {
+    @each $al-name, $al-value in $horizontal-alignments {
+      .#{$prefix}#{$alignment}-h#{$al-name}--#{$mq-name} {
+        @media #{$mq-value} {
+          justify-content: $al-value;
+        }
+      }
+    }
+  }
+}
