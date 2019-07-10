@@ -1,0 +1,17 @@
+//////////////////////////////////////////////////////////
+// Align
+//////////////////////////////////////////////////////////
+@import "alignment-content";
+@import "alignment-direction";
+@import "alignment-horizontal";
+@import "alignment-vertical";
+
+.#{$prefix}#{$align} {
+  display: flex;
+}
+
+.#{$prefix}#{$align}-c {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

@@ -1,29 +1,31 @@
 //////////////////////////////////////////////////////////
-// Alignment Horizontal
+// Align Horizontal
 //////////////////////////////////////////////////////////
 
 $horizontal-alignments: (
   "l": flex-start,
   "c": center,
   "r": flex-end,
-  "b": space-between,
-  "a": space-around,
-  "e": space-evenly
+  "sb": space-between,
+  "sa": space-around,
+  "se": space-evenly
 );
 
-// generate horizontal alignment classes
+// generate align horizontal classes
 @each $al-name, $al-value in $horizontal-alignments {
-  .#{$prefix}#{$alignment}-h#{$al-name} {
+  .#{$prefix}#{$align}-h#{$al-name} {
+    display: flex;
     justify-content: $al-value;
   }
 }
 
-// generate horizontal alignment classes with media queries
+// generate align horizontal classes with media queries
 @each $mq in $media-queries {
   @each $mq-name, $mq-value in $mq {
     @each $al-name, $al-value in $horizontal-alignments {
-      .#{$prefix}#{$alignment}-h#{$al-name}--#{$mq-name} {
+      .#{$prefix}#{$align}-h#{$al-name}--#{$mq-name} {
         @media #{$mq-value} {
+          display: flex;
           justify-content: $al-value;
         }
       }

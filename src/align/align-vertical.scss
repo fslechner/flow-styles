@@ -1,5 +1,5 @@
 //////////////////////////////////////////////////////////
-// Alignment Vertical
+// Align Vertical
 //////////////////////////////////////////////////////////
 
 $vertical-alignments: (
@@ -10,19 +10,21 @@ $vertical-alignments: (
   "bl": baseline
 );
 
-// generate vertical alignment classes
+// generate align vertical classes
 @each $al-name, $al-value in $vertical-alignments {
-  .#{$prefix}#{$alignment}-v#{$al-name} {
+  .#{$prefix}#{$align}-v#{$al-name} {
+    display: flex;
     align-items: $al-value;
   }
 }
 
-// generate vertical alignment classes with media queries
+// generate align vertical classes with media queries
 @each $mq in $media-queries {
   @each $mq-name, $mq-value in $mq {
     @each $al-name, $al-value in $vertical-alignments {
-      .#{$prefix}#{$alignment}-v#{$al-name}--#{$mq-name} {
+      .#{$prefix}#{$align}-v#{$al-name}--#{$mq-name} {
         @media #{$mq-value} {
+          display: flex;
           align-items: $al-value;
         }
       }

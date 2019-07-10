@@ -1,29 +1,31 @@
 //////////////////////////////////////////////////////////
-// Alignment Content
+// Align Content
 //////////////////////////////////////////////////////////
 $content-alignments: (
-  "l": flex-start,
-  "r": flex-end,
+  "t": flex-start,
+  "b": flex-end,
   "c": center,
   "s": stretch,
-  "b": space-between,
-  "a": space-around
+  "sb": space-between,
+  "sa": space-around
 );
 
-// generate vertical alignment classes
+// generate align content classes
 @each $al-name, $al-value in $content-alignments {
-  .#{$prefix}#{$alignment}-v#{$al-name} {
-    align-items: $al-value;
+  .#{$prefix}#{$align}-c#{$al-name} {
+    display: flex;
+    align-content: $al-value;
   }
 }
 
-// generate vertical alignment classes with media queries
+// generate align content classes with media queries
 @each $mq in $media-queries {
   @each $mq-name, $mq-value in $mq {
     @each $al-name, $al-value in $content-alignments {
-      .#{$prefix}#{$alignment}-v#{$al-name}--#{$mq-name} {
+      .#{$prefix}#{$align}-c#{$al-name}--#{$mq-name} {
         @media #{$mq-value} {
-          align-items: $al-value;
+          display: flex;
+          align-content: $al-value;
         }
       }
     }

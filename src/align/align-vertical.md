@@ -1,6 +1,6 @@
-# Alignment Vertical
+# Align Vertical
 
-Because Alignment uses CSS-Flexbox you have to set **display: flex;** like shown below to use Alignment.
+Because Align uses CSS-Flexbox you have to set **display: flex;** like shown below to use Alignment.
 
 ```html
 <div class="al">Item</div>
