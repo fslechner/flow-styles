@@ -43,7 +43,7 @@ storiesOf("Heading", module).add(
   }
 );
 
-/* storiesOf("Heading", module).add(
+storiesOf("Heading", module).add(
   "Heading Responsive",
   () => (
     <div>
@@ -55,4 +55,4 @@ storiesOf("Heading", module).add(
   {
     notes: { markdown: headingResponsive }
   }
-); */
+);

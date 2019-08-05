@@ -20,8 +20,10 @@ storiesOf("Rotation", module).add(
 storiesOf("Rotation", module).add(
   "Rotation Responsive",
   () => (
-    <div className="ro-90--sml ro-180--smu ro-box sp-mb5">
-      Rotation by Viewport
+    <div>
+      <div className="ro-90--sml ro-180--smu ro-box sp-mb5">
+        Rotation by Viewport
+      </div>
     </div>
   ),
   {

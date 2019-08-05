@@ -6,25 +6,23 @@ storiesOf("Background", module).add(
   "Background Color",
   () => (
     <div>
-      <div>
-        <div className="ba-dark sp-p2 co-silver">
-          <b>ba-dark</b>
-        </div>
-        <div className="ba-blue sp-p2 co-silver">
-          <b>ba-blue</b>
-        </div>
-        <div className="ba-petrol sp-p2">
-          <b>ba-petrol</b>
-        </div>
-        <div className="ba-petrol60 sp-p2">
-          <b>ba-petrol60</b>
-        </div>
-        <div className="ba-petrol20 sp-p2">
-          <b>ba-petrol20</b>
-        </div>
-        <div className="ba-silver sp-p2">
-          <b>ba-silver</b>
-        </div>
+      <div className="ba-dark sp-p2 co-silver">
+        <b>ba-dark</b>
+      </div>
+      <div className="ba-blue sp-p2 co-silver">
+        <b>ba-blue</b>
+      </div>
+      <div className="ba-petrol sp-p2">
+        <b>ba-petrol</b>
+      </div>
+      <div className="ba-petrol60 sp-p2">
+        <b>ba-petrol60</b>
+      </div>
+      <div className="ba-petrol20 sp-p2">
+        <b>ba-petrol20</b>
+      </div>
+      <div className="ba-silver sp-p2">
+        <b>ba-silver</b>
       </div>
     </div>
   ),
