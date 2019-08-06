@@ -22,7 +22,7 @@ $content-alignments: (
 @each $mq in $media-queries {
   @each $mq-name, $mq-value in $mq {
     @each $al-name, $al-value in $content-alignments {
-      .#{$mq-name}:#{$prefix}#{$align}-c-#{$al-name} {
+      .#{$mq-name}\:#{$prefix}#{$align}-c-#{$al-name} {
         @media #{$mq-value} {
           display: flex;
           align-content: $al-value;

@@ -13,7 +13,7 @@
 @each $mq in $media-queries {
   @each $mq-name, $mq-value in $mq {
     @each $value in $shrink-numbers {
-      .#{$mq-name}:#{$prefix}#{$alignitem}-s-#{$value} {
+      .#{$mq-name}\:#{$prefix}#{$alignitem}-s-#{$value} {
         @media #{$mq-value} {
           flex-shrink: $value;
         }

@@ -13,7 +13,7 @@
 @each $mq in $media-queries {
   @each $mq-name, $mq-value in $mq {
     @each $value in $order-numbers {
-      .#{$mq-name}:#{$prefix}#{$alignitem}-o-#{$value} {
+      .#{$mq-name}\:#{$prefix}#{$alignitem}-o-#{$value} {
         @media #{$mq-value} {
           order: $value;
         }

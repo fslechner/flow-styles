@@ -23,7 +23,7 @@ $horizontal-alignments: (
 @each $mq in $media-queries {
   @each $mq-name, $mq-value in $mq {
     @each $al-name, $al-value in $horizontal-alignments {
-      .#{$mq-name}:#{$prefix}#{$align}-h-#{$al-name} {
+      .#{$mq-name}\:#{$prefix}#{$align}-h-#{$al-name} {
         @media #{$mq-value} {
           display: flex;
           justify-content: $al-value;

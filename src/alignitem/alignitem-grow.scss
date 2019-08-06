@@ -13,7 +13,7 @@
 @each $mq in $media-queries {
   @each $mq-name, $mq-value in $mq {
     @each $value in $grow-numbers {
-      .#{$mq-name}:#{$prefix}#{$alignitem}-g-#{$value} {
+      .#{$mq-name}\:#{$prefix}#{$alignitem}-g-#{$value} {
         @media #{$mq-value} {
           flex-grow: $value;
         }
