@@ -13,7 +13,7 @@
 @each $mq in $media-queries {
   @each $mq-name, $mq-value in $mq {
     @each $degree in $degrees {
-      .#{$prefix}#{$rotation}-#{$degree}--#{$mq-name} {
+      .#{$mq-name}\:#{$prefix}#{$rotation}-#{$degree} {
         @media #{$mq-value} {
           transform: rotate(#{$degree}deg);
         }

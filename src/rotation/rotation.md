@@ -28,14 +28,14 @@ Every \$media-queries entry is possible to use. Predefined breakpoints are xsl, 
 
 ## Responsive Examples
 
-### Rotate 90 degrees between breakpoint sm and md: **ro-90--sm**
+### Rotate 90 degrees between breakpoint sm and md: **sm:ro-90**
 
 ```html
-<div class="ro-90--sm">Item</div>
+<div class="sm:ro-90">Item</div>
 ```
 
-### Rotate 90 degrees lower and 180 degrees upper breakpoint sm: **ro-90--sml ro-180--smu**
+### Rotate 90 degrees lower and 180 degrees upper breakpoint sm: **sml:ro-90 smu:ro-180**
 
 ```html
-<div class="ro-90--sml ro-180--smu">Item</div>
+<div class="sml:ro-90 smu:ro-180">Item</div>
 ```
