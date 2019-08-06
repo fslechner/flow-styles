@@ -28,14 +28,14 @@ Every \$media-queries entry is possible to use. Predefined breakpoints are xsl, 
 
 ## Responsive Examples
 
-### Level content between breakpoints sm and md: **le-content--sm**
+### Level content between breakpoints sm and md: **sm:le-content**
 
 ```html
-<div class="le-content--sm">Item</div>
+<div class="sm:le-content">Item</div>
 ```
 
-### Level content lower and toast upper breakpoint sm: **le-content--sml le-toast--smu**
+### Level content lower and toast upper breakpoint sm: **sml:le-content smu:le-toast**
 
 ```html
-<div class="le-content--sml le-toast--smu">Item</div>
+<div class="sml:le-content smu:le-toast">Item</div>
 ```

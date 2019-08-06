@@ -5,7 +5,7 @@ import level from "./level.md";
 storiesOf("Level", module).add(
   "Level Name",
   () => (
-    <div className="sp-m8">
+    <div className="sp-m-8">
       <div className="le-base le-box0">
         <b>le-base</b>&nbsp;(z-index: 0)
       </div>
@@ -52,9 +52,9 @@ storiesOf("Level", module).add(
 storiesOf("Level", module).add(
   "Level Responsive",
   () => (
-    <div className="sp-m8">
-      <div className="le-content--sml le-toast--smu le-box5">Box 1</div>
-      <div className="le-toast--sml le-content--smu le-box10">Box 2</div>
+    <div className="sp-m-8">
+      <div className="sml:le-content smu:le-toast le-box5">Box 1</div>
+      <div className="sml:le-toast smu:le-content le-box10">Box 2</div>
     </div>
   ),
   {

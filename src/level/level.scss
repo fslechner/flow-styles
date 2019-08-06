@@ -20,7 +20,7 @@ $factor: 100;
 @each $mq in $media-queries {
   @each $mq-name, $mq-value in $mq {
     @each $level-name in $levels {
-      .#{$prefix}#{$level}-#{$level-name}--#{$mq-name} {
+      .#{$mq-name}\:#{$prefix}#{$level}-#{$level-name} {
         @media #{$mq-value} {
           z-index: index($levels, $level-name) * -$factor + length($levels) *
             $factor - $factor;
