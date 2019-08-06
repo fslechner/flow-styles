@@ -7,16 +7,16 @@ storiesOf("Heading (he)", module).add(
   "Heading Styles",
   () => (
     <div>
-      <div className="he-h1-p sp-m2">
+      <div className="he-h1-p sp-m-2">
         <b>he-h1-p</b>: Heading style primary
       </div>
-      <div className="he-h1-s sp-m2">
+      <div className="he-h1-s sp-m-2">
         <b>he-h1-s</b>: Heading style secondary
       </div>
-      <div className="he-h1-t sp-m2">
+      <div className="he-h1-t sp-m-2">
         <b>he-h1-t</b>: Heading style tertiary
       </div>
-      <div className="he-h1-q sp-m2">
+      <div className="he-h1-q sp-m-2">
         <b>he-h1-q</b>: Heading style quaternary
       </div>
     </div>

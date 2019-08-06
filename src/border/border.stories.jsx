@@ -7,14 +7,14 @@ storiesOf("Border (bo)", module).add(
   () => (
     <div>
       <div>
-        <div className="bo-one sp-m4">
-          <b>bo-one</b>
+        <div className="bo-p sp-m-4">
+          <b>bo-p</b>
         </div>
-        <div className="bo-two sp-m4">
-          <b>bo-two</b>
+        <div className="bo-s sp-m-4">
+          <b>bo-s</b>
         </div>
-        <div className="bo-three sp-m4">
-          <b>bo-three</b>
+        <div className="bo-t sp-m-4">
+          <b>bo-t</b>
         </div>
       </div>
     </div>
@@ -28,7 +28,7 @@ storiesOf("Border (bo)", module).add(
   "Border Responsive",
   () => (
     <div>
-      <div className="sml:bo-one md:bo-two lgu:bo-three sp-m2">
+      <div className="sml:bo-p md:bo-s lgu:bo-t sp-m-2">
         <b>Border by Viewports</b>
       </div>
     </div>
