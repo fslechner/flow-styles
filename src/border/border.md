@@ -14,28 +14,40 @@ Every \$media-queries entry is possible to use. Predefined breakpoints are xsl, 
 
 ## Static Examples
 
-### Border style one: **bo-one**
+### Border style primary: **bo-p**
 
 ```html
-<div class="bo-one">Item</div>
+<div class="bo-p">Item</div>
 ```
 
-### Border style two: **bo-two**
+### Border style secondary: **bo-s**
 
 ```html
-<div class="bo-two">Item</div>
+<div class="bo-s">Item</div>
+```
+
+### Border style tertiary: **bo-t**
+
+```html
+<div class="bo-t">Item</div>
+```
+
+### Border style quaternary: **bo-q**
+
+```html
+<div class="bo-q">Item</div>
 ```
 
 ## Responsive Examples
 
-### Border style one between breakpoint sm and md: **sm:bo-one**
+### Border style primary between breakpoint sm and md: **sm:bo-p**
 
 ```html
-<div class="sm:bo-one">Item</div>
+<div class="sm:bo-p">Item</div>
 ```
 
-### Border style one lower and two upper breakpoint sm: **sml:bo-one smu:bo-two**
+### Border style one lower and two upper breakpoint sm: **sml:bo-p smu:bo-s**
 
 ```html
-<div class="sml:bo-one smu:bo-two">Item</div>
+<div class="sml:bo-p smu:bo-s">Item</div>
 ```
