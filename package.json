@@ -1,7 +1,7 @@
 {
   "name": "flow-styles",
   "version": "0.0.1",
-  "description": "An Atomic CSS Library",
+  "description": "A Sass-Based Atomic CSS Library",
   "author": "Frank Simon Lechner",
   "license": "MIT",
   "main": "src/index.scss",
@@ -10,8 +10,7 @@
     "storybook": "start-storybook -p 6006",
     "styleguide": "styleguidist server",
     "styleguide:build": "styleguidist build",
-    "build-storybook": "build-storybook",
-    "lint:styles": "stylelint src/**/*.{css,scss,ts,tsx}"
+    "build-storybook": "build-storybook"
   },
   "devDependencies": {
     "@babel/core": "^7.4.4",

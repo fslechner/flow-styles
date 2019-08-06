@@ -11,38 +11,38 @@ Set a text size to an element.
 - xl
 - xxl
 
-### Text style primary size xxl: **te-p-xxl**
+### Text size xxl style primary : **te-xxl-p**
 
 ```html
-<div class="te-p-xxl">Text</div>
+<div class="te-xxl-p">Text</div>
 ```
 
-### Text style primary size h2: **te-p-xl**
+### Text size xl style primary: **te-xl-p**
 
 ```html
-<div class="te-p-xl">Item</div>
+<div class="te-xl-p">Item</div>
 ```
 
-### Text style primary size lg: **htee-p-lg**
+### Text size lg style primary **te-lg-p**
 
 ```html
-<div class="te-p-lg">Text</div>
+<div class="te-lg-p">Text</div>
 ```
 
-### Text style one size md: **te-p-md**
+### Text ize md style primary: **te-md-p**
 
 ```html
-<div class="te-p-md">Text</div>
+<div class="te-md-p">Text</div>
 ```
 
-### Text style primary size sm: **te-p-sm**
+### Text size sm style primary: **te-sm-p**
 
 ```html
-<div class="te-p-sm">Text</div>
+<div class="te-sm-p">Text</div>
 ```
 
-### Text style primary size xs: **te-p-xs**
+### Text size xs style primary: **te-xs-p**
 
 ```html
-<div class="te-p-xs">Text</div>
+<div class="te-xs-p">Text</div>
 ```

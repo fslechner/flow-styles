@@ -11,26 +11,26 @@ Every \$text-styles entry is possible to use. Predefined names are:
 - tertiary (t)
 - quaternary (q)
 
-### Text style primary: **te-p**
+### Text size md style primary: **te-md-p**
 
 ```html
-<div class="te-p">Item</div>
+<div class="te-md-p">Item</div>
 ```
 
-### Text style secondary: **he-s**
+### Text size md style secondary: **he-md-s**
 
 ```html
-<div class="te-s">Item</div>
+<div class="te-md-s">Item</div>
 ```
 
-### Text style tertiary: **te-t**
+### Text size md style tertiary: **te-md-t**
 
 ```html
-<div class="te-t">Item</div>
+<div class="te-md-t">Item</div>
 ```
 
-### Text style quaternary: **te-q**
+### Text size md style quaternary: **te-md-q**
 
 ```html
-<div class="te-q">Item</div>
+<div class="te-md-q">Item</div>
 ```

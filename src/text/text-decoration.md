@@ -9,26 +9,26 @@ Set a text decoration to an element.
 - italic (i)
 - line-through (lt)
 
-### Text style primary decoration bold: **te-p-n**
+### Text size md style primary decoration bold: **te-md-p-b**
 
 ```html
-<div class="te-p-b">Text</div>
+<div class="te-md-p-b">Text</div>
 ```
 
-### Text style primary decoration underlined: **he-p-u**
+### Text size md style primary decoration underlined: **te-md-p-u**
 
 ```html
-<div class="te-p-u">Text</div>
+<div class="te-md-p-u">Text</div>
 ```
 
-### Text style primary decoration italic: **te-p-i**
+### Text size md style primary decoration italic: **te-md-p-i**
 
 ```html
-<div class="te-p-i">Text</div>
+<div class="te-md-p-i">Text</div>
 ```
 
-### Text style primary decoration line-through: **te-p-lt**
+### Text size md style primary decoration line-through: **te-md-p-lt**
 
 ```html
-<div class="te-p-lt">Text</div>
+<div class="te-md-p-lt">Text</div>
 ```

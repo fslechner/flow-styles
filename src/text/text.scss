@@ -17,34 +17,10 @@ $text-decorators: (
   )
 );
 
-// generate text classes
-@each $text-name, $text-value in $text-styles {
-  .#{$prefix}#{$text}-#{$text-name} {
-    @each $attr, $value in $text-value {
-      #{$attr}: $value;
-    }
-  }
-}
-
-// generate text classes with media queries
-@each $mq in $media-queries {
-  @each $mq-name, $mq-value in $mq {
-    @each $text-name, $text-value in $text-styles {
-      .#{$prefix}#{$text}-#{$text-name}--#{$mq-name} {
-        @media #{$mq-value} {
-          @each $attr, $value in $text-value {
-            #{$attr}: $value;
-          }
-        }
-      }
-    }
-  }
-}
-
 // generate text classes with sizes
 @each $text-name, $text-value in $text-styles {
   @each $text-sizename, $text-sizevalue in $text-sizes {
-    .#{$prefix}#{$text}-#{$text-name}-#{$text-sizename} {
+    .#{$prefix}#{$text}-#{$text-sizename}-#{$text-name} {
       @each $attr, $value in $text-value {
         #{$attr}: $value;
       }
@@ -60,7 +36,7 @@ $text-decorators: (
   @each $mq-name, $mq-value in $mq {
     @each $text-name, $text-value in $text-styles {
       @each $text-sizename, $text-sizevalue in $text-sizes {
-        .#{$prefix}#{$text}-#{$text-name}-#{$text-sizename}--#{$mq-name} {
+        .#{$mq-name}\:#{$prefix}#{$text}-#{$text-sizename}-#{$text-name} {
           @media #{$mq-value} {
             @each $attr, $value in $text-value {
               #{$attr}: $value;
@@ -79,7 +55,7 @@ $text-decorators: (
 @each $text-name, $text-value in $text-styles {
   @each $text-sizename, $text-sizevalue in $text-sizes {
     @each $decorator-name, $decorator-value in $text-decorators {
-      .#{$prefix}#{$text}-#{$text-name}-#{$text-sizename}-#{$decorator-name} {
+      .#{$prefix}#{$text}-#{$text-sizename}-#{$text-name}-#{$decorator-name} {
         @each $attr, $value in $text-value {
           #{$attr}: $value;
         }
@@ -100,7 +76,7 @@ $text-decorators: (
     @each $text-name, $text-value in $text-styles {
       @each $text-sizename, $text-sizevalue in $text-sizes {
         @each $decorator-name, $decorator-value in $text-decorators {
-          .#{$prefix}#{$text}-#{$text-name}-#{$text-sizename}-#{$decorator-name}--#{$mq-name} {
+          .#{$mq-name}\:#{$prefix}#{$text}-#{$text-sizename}-#{$text-name}-#{$decorator-name} {
             @media #{$mq-value} {
               @each $attr, $value in $text-value {
                 #{$attr}: $value;
