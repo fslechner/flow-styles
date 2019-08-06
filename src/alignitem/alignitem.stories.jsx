@@ -79,11 +79,3 @@ storiesOf("Alignitem (ali)", module).add(
     notes: { markdown: alignitemOrder }
   }
 );
-
-storiesOf("Alignitem (ali)", module).add("Alignitem Responsive", () => (
-  <div>
-    <div className="ba-dark sp-p2 co-silver">
-      <b>ba-dark</b>
-    </div>
-  </div>
-));

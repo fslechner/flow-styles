@@ -28,14 +28,14 @@ Every \$media-queries entry is possible to use. Predefined breakpoints are xsl, 
 
 ## Responsive Examples
 
-### Background color silver between breakpoint sm and md: **ba-silver--sm**
+### Background color silver between breakpoint sm and md: **sm:ba-silver**
 
 ```html
-<div class="ba-silver--sm">Item</div>
+<div class="sm:ba-silver">Item</div>
 ```
 
-### Background color silver lower and petrol upper breakpoint sm: **ba-silver--sml ba-petrol--smu**
+### Background color silver lower and petrol upper breakpoint sm: **sml:ba-silver smu:ba-petrol**
 
 ```html
-<div class="ba-silver--sml ba-petrol--smu">Item</div>
+<div class="sml:ba-silver smu:ba-petrol">Item</div>
 ```

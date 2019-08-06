@@ -20,7 +20,7 @@ $item-alignments: (
 @each $mq in $media-queries {
   @each $mq-name, $mq-value in $mq {
     @each $al-name, $al-value in $item-alignments {
-      .#{$mq-name}:#{$prefix}#{$alignitem}-as-#{$al-name} {
+      .#{$mq-name}\:#{$prefix}#{$alignitem}-as-#{$al-name} {
         @media #{$mq-value} {
           align-self: $al-value;
         }

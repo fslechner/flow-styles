@@ -35,7 +35,7 @@ storiesOf("Background (ba)", module).add(
   "Background Responsive",
   () => (
     <div>
-      <div className="co-silver co-dark--smu ba-dark ba-blue--xs ba-petrol--sm ba-petrol60--md ba-petrol20--lg ba-silver--xlu sp-p2">
+      <div className="co-silver smu:co-dark ba-dark xs:ba-blue sm:ba-petrol md:ba-petrol60 lg:ba-petrol20 xlu:ba-silver sp-p2">
         <b>Backround Color by Viewport</b>
       </div>
     </div>
