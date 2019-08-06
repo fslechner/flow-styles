@@ -7,17 +7,17 @@ storiesOf("Heading (he)", module).add(
   "Heading Styles",
   () => (
     <div>
-      <div className="he-p sp-m2">
-        <b>he-p</b>: Heading style primary with inherit size
+      <div className="he-h1-p sp-m2">
+        <b>he-h1-p</b>: Heading style primary
       </div>
-      <div className="he-s sp-m2">
-        <b>he-s</b>: Heading style secondary with inherit size
+      <div className="he-h1-s sp-m2">
+        <b>he-h1-s</b>: Heading style secondary
       </div>
-      <div className="he-t sp-m2">
-        <b>he-t</b>: Heading style tertiary with inherit size
+      <div className="he-h1-t sp-m2">
+        <b>he-h1-t</b>: Heading style tertiary
       </div>
-      <div className="he-q sp-m2">
-        <b>he-q</b>: Heading style quaternary with inherit size
+      <div className="he-h1-q sp-m2">
+        <b>he-h1-q</b>: Heading style quaternary
       </div>
     </div>
   ),
@@ -30,12 +30,12 @@ storiesOf("Heading (he)", module).add(
   "Heading Sizes",
   () => (
     <div>
-      <div className="he-p-h1">he-p-h1: Heading style primary size h1</div>
-      <div className="he-p-h2">he-p-h2: Heading style primary size h2</div>
-      <div className="he-p-h3">he-p-h3: Heading style primary size h3</div>
-      <div className="he-p-h4">he-p-h4: Heading style primary size h4</div>
-      <div className="he-p-h5">he-p-h5: Heading style primary size h5</div>
-      <div className="he-p-h6">he-p-h6: Heading style primary size h6</div>
+      <div className="he-h1-p">he-h1-p: Heading size h1 style primary</div>
+      <div className="he-h2-p">he-h2-p: Heading size h2 style primary</div>
+      <div className="he-h3-p">he-h3-p: Heading size h3 style primary</div>
+      <div className="he-h4-p">he-h4-p: Heading size h4 style primary</div>
+      <div className="he-h5-p">he-h5-p: Heading size h5 style primary</div>
+      <div className="he-h6-p">he-h6-p: Heading size h6 style primary</div>
     </div>
   ),
   {
@@ -47,7 +47,7 @@ storiesOf("Heading  (he)", module).add(
   "Heading Responsive",
   () => (
     <div>
-      <div className="he-p-h6--sml he-p-h4--sm he-p-h3--md he-p-h2--lg he-p-h1--lgu">
+      <div className="sml:he-h6-p sm:he-h4-p md:he-h3-p lg:he-h2-p lgu:he-h1-p">
         Heading by Viewport
       </div>
     </div>
