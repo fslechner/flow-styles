@@ -13,7 +13,7 @@
 @each $mq in $media-queries {
   @each $mq-name, $mq-value in $mq {
     @each $color-name, $color-value in $brand-colors {
-      .#{$prefix}#{$color}-#{$color-name}--#{$mq-name} {
+      .#{$mq-name}\:#{$prefix}#{$color}-#{$color-name} {
         @media #{$mq-value} {
           color: $color-value;
         }

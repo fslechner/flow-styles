@@ -37,7 +37,7 @@ storiesOf("Color (co)", module).add(
   "Color Responsive",
   () => (
     <div>
-      <div className="co-dark co-blue--xs co-petrol--sm co-petrol60--md co-petrol20--lg co-silver--xl sp-p2">
+      <div className="co-dark xs:co-blue sm:co-petrol md:co-petrol60 lg:co-petrol20 xl:co-silver sp-p2">
         <b>Color by Viewports</b>
       </div>
     </div>
