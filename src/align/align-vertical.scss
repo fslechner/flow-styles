@@ -12,7 +12,7 @@ $vertical-alignments: (
 
 // generate align vertical classes
 @each $al-name, $al-value in $vertical-alignments {
-  .#{$prefix}#{$align}-v#{$al-name} {
+  .#{$prefix}#{$align}-v-#{$al-name} {
     display: flex;
     align-items: $al-value;
   }
@@ -22,7 +22,7 @@ $vertical-alignments: (
 @each $mq in $media-queries {
   @each $mq-name, $mq-value in $mq {
     @each $al-name, $al-value in $vertical-alignments {
-      .#{$prefix}#{$align}-v#{$al-name}--#{$mq-name} {
+      .#{$mq-name}:#{$prefix}#{$align}-v-#{$al-name} {
         @media #{$mq-value} {
           display: flex;
           align-items: $al-value;

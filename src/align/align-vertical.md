@@ -18,46 +18,46 @@ Every \$media-queries entry is possible to use. Predefined breakpoints are xsl, 
 
 ## Static Examples
 
-### Align vertical top: **al-vt**
+### Align vertical top: **al-v-t**
 
 ```html
-<div class="al-vt">Item</div>
+<div class="al-v-t">Item</div>
 ```
 
-### Align vertical center: **al-vc**
+### Align vertical center: **al-v-c**
 
 ```html
-<div class="al-vc">Item</div>
+<div class="al-v-c">Item</div>
 ```
 
-### Align vertical bottom: **al-vb**
+### Align vertical bottom: **al-v-b**
 
 ```html
-<div class="al-vb">Item</div>
+<div class="al-v-b">Item</div>
 ```
 
-### Align vertical stretch: **al-vs**
+### Align vertical stretch: **al-v-s**
 
 ```html
-<div class="al-vs">Item</div>
+<div class="al-v-s">Item</div>
 ```
 
-### Align vertical baseline: **al-vbl**
+### Align vertical baseline: **al-v-bl**
 
 ```html
-<div class="al-vbl">Item</div>
+<div class="al-v-bl">Item</div>
 ```
 
 ## Responsive Examples
 
-### Align vertical center between breakpoint sm and md: **al-vc--sm**
+### Align vertical center between breakpoint sm and md: **sm:al-v-c**
 
 ```html
-<div class="al-vc--sm">Item</div>
+<div class="sm:al-v-c">Item</div>
 ```
 
-### Align vertical center lower and bottom upper breakpoint sm: **al-vc--sml al-vb--smu**
+### Align vertical center lower and bottom upper breakpoint sm: **sml:al-v-c smu:al-v-b**
 
 ```html
-<div class="al-vc--sml al-vb--smu">Item</div>
+<div class="sml:al-v-c smu:al-v-b">Item</div>
 ```

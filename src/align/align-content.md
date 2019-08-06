@@ -17,52 +17,52 @@ Every \$media-queries entry is possible to use. Predefined breakpoints are xsl, 
 
 ## Static Examples
 
-### Align Content Top: **al-ct**
+### Align Content Top: **al-c-t**
 
 ```html
-<div class="al-ct">Item</div>
+<div class="al-c-t">Item</div>
 ```
 
-### Align Content Center: **al-cc**
+### Align Content Center: **al-c-c**
 
 ```html
-<div class="al-cc">Item</div>
+<div class="al-c-c">Item</div>
 ```
 
-## Align Content Bottom: **al-cb**
+## Align Content Bottom: **al-c-b**
 
 ```html
-<div class="al-cb">Item</div>
+<div class="al-c-b">Item</div>
 ```
 
-## Align Content Space-Around: **al-csa**
+## Align Content Space-Around: **al-c-sa**
 
 ```html
-<div class="al-csa">Item</div>
+<div class="al-c-sa">Item</div>
 ```
 
-## Align Content Space-Between: **al-csb**
+## Align Content Space-Between: **al-c-sb**
 
 ```html
-<div class="al-csb">Item</div>
+<div class="al-c-sb">Item</div>
 ```
 
-## Align Content Stretch: **al-cs**
+## Align Content Stretch: **al-c-s**
 
 ```html
-<div class="al-cs">Item</div>
+<div class="al-c-s">Item</div>
 ```
 
 ## Responsive Examples
 
-### Align Content center between breakpoint sm and md: **al-cc--sm**
+### Align Content center between breakpoint sm and md: **sm:al-c-c**
 
 ```html
-<div class="al-cc--sm">Item</div>
+<div class="sm:al-c-c">Item</div>
 ```
 
-### Align Content center lower and bottom upper breakpoint sm: **al-cc--sml al-cb--smu**
+### Align Content center lower and bottom upper breakpoint sm: **sml:al-c-c smu:al-c-b**
 
 ```html
-<div class="al-cc--sml al-cb--smu">Item</div>
+<div class="sml:al-c-c smu:al-c-b">Item</div>
 ```

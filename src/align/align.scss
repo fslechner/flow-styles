@@ -6,12 +6,8 @@
 @import "align-horizontal";
 @import "align-vertical";
 
-// not in docs!
-.#{$prefix}#{$align} {
-  display: flex;
-}
-
-// not in docs!
+// TODO: add to docs
+// Shortcut for centering vertical and horizontal at once
 .#{$prefix}#{$align}-c {
   display: flex;
   align-items: center;

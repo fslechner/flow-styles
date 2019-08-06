@@ -22,88 +22,88 @@ Every \$media-queries entry is possible to use. Predefined breakpoints are xsl, 
 
 ## Static Examples
 
-### Align Direction Horizontal: **al-dh**
+### Align Direction Horizontal: **al-d-h**
 
 ```html
-<div class="al-dh">Item</div>
+<div class="al-d-h">Item</div>
 ```
 
-### Align Direction Horizontal Reverse: **al-dhr**
+### Align Direction Horizontal Reverse: **al-d-hr**
 
 ```html
-<div class="al-dhr">Item</div>
+<div class="al-d-hr">Item</div>
 ```
 
-## Align Direction Vertical: **al-dv**
+## Align Direction Vertical: **al-d-v**
 
 ```html
-<div class="al-dv">Item</div>
+<div class="al-d-v">Item</div>
 ```
 
-## Align Direction Vertical Reverse: **al-dvr**
+## Align Direction Vertical Reverse: **al-d-vr**
 
 ```html
-<div class="al-dvr">Item</div>
+<div class="al-d-vr">Item</div>
 ```
 
-## Align Direction Horizontal Wrap: **al-dhw**
+## Align Direction Horizontal Wrap: **al-d-hw**
 
 ```html
-<div class="al-dhw">Item</div>
+<div class="al-d-hw">Item</div>
 ```
 
-## Align Direction Horizontal Wrap Reverse: **al-dhwr**
+## Align Direction Horizontal Wrap Reverse: **al-d-hwr**
 
 ```html
-<div class="al-dhwr">Item</div>
+<div class="al-d-hwr">Item</div>
 ```
 
-## Align Direction Horizontal Reverse Wrap : **al-dhrw**
+## Align Direction Horizontal Reverse Wrap : **al-d-hrw**
 
 ```html
-<div class="al-dhrw">Item</div>
+<div class="al-d-hrw">Item</div>
 ```
 
-## Align Direction Horizontal Reverse Wrap Reverse: **al-dhrwr**
+## Align Direction Horizontal Reverse Wrap Reverse: **al-d-hrwr**
 
 ```html
-<div class="al-dhrwr">Item</div>
+<div class="al-d-hrwr">Item</div>
 ```
 
-## Align Direction Vertical Wrap: **al-dvw**
+## Align Direction Vertical Wrap: **al-d-vw**
 
 ```html
-<div class="al-dvw">Item</div>
+<div class="al-d-vw">Item</div>
 ```
 
-## Align Direction Vertical Wrap Reverse: **al-dvwr**
+## Align Direction Vertical Wrap Reverse: **al-d-vwr**
 
 ```html
-<div class="al-dvwr">Item</div>
+<div class="al-d-vwr">Item</div>
 ```
 
-## Align Direction Vertical Reverse Wrap: **al-dvrw**
+## Align Direction Vertical Reverse Wrap: **al-d-vrw**
 
 ```html
-<div class="al-dvrw">Item</div>
+<div class="al-d-vrw">Item</div>
 ```
 
-## Align Direction Vertical Reverse Wrap Reverse: **al-dvrwr**
+## Align Direction Vertical Reverse Wrap Reverse: **al-d-vrwr**
 
 ```html
-<div class="al-dvrwr">Item</div>
+<div class="al-d-vrwr">Item</div>
 ```
 
 ## Responsive Examples
 
-### Align direction vertical between breakpoint sm and md: **al-vc--sm**
+### Align direction vertical between breakpoint sm and md: **sm:al-vc**
 
 ```html
-<div class="al-dv--sm">Item</div>
+<div class="sm:al-dv">Item</div>
 ```
 
-### Align direction vertical lower and horizontal upper breakpoint sm: **al-dv--sml al-dh--smu**
+### Align direction vertical lower and horizontal upper breakpoint sm: **sml:al-d-v smu:al-d-h**
 
 ```html
-<div class="al-dv--sml al-dh--smu">Item</div>
+<div class="sml:al-d-v smu:al-d-h">Item</div>
 ```

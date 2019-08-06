@@ -19,52 +19,52 @@ Every \$media-queries entry is possible to use. Predefined breakpoints are xsl, 
 
 ## Static Examples
 
-### Align Horizontal Left: **al-hl**
+### Align Horizontal Left: **al-h-l**
 
 ```html
-<div class="al-hl">Item</div>
+<div class="al-h-l">Item</div>
 ```
 
-### Align Horizontal Center: **al-hc**
+### Align Horizontal Center: **al-h-c**
 
 ```html
-<div class="al-hc">Item</div>
+<div class="al-h-c">Item</div>
 ```
 
-## Align Horizontal Right: **al-hr**
+## Align Horizontal Right: **al-h-r**
 
 ```html
-<div class="al-hr">Item</div>
+<div class="al-h-r">Item</div>
 ```
 
-## Align Horizontal Space-Around: **al-hsa**
+## Align Horizontal Space-Around: **al-h-sa**
 
 ```html
-<div class="al-hsa">Item</div>
+<div class="al-h-sa">Item</div>
 ```
 
-## Align Horizontal Space-Between: **al-hsb**
+## Align Horizontal Space-Between: **al-h-sb**
 
 ```html
-<div class="al-hsb">Item</div>
+<div class="al-h-sb">Item</div>
 ```
 
-## Align Horizontal Space-Evenly: **al-hse**
+## Align Horizontal Space-Evenly: **al-h-se**
 
 ```html
-<div class="al-hse">Item</div>
+<div class="al-h-se">Item</div>
 ```
 
 ## Responsive Examples
 
-### Align horizontal center between breakpoint sm and md: **al-vc--sm**
+### Align horizontal center between breakpoint sm and md: **sm:al-v-c**
 
 ```html
-<div class="al-vc--sm">Item</div>
+<div class="sm:al-v-c">Item</div>
 ```
 
-### Align horizontal center lower and right upper breakpoint sm: **al-hc--sml al-hr--smu**
+### Align horizontal center lower and right upper breakpoint sm: **sml:al-h-c smu:al-h-r**
 
 ```html
-<div class="al-hc--sml al-hr--smu">Item</div>
+<div class="sml:al-h-c smu:al-h-r">Item</div>
 ```

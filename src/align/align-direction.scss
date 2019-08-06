@@ -16,7 +16,7 @@ $wrap-types: (
 
 // generate align direction classes
 @each $direction-name, $direction-value in $flex-directions {
-  .#{$prefix}#{$align}-d#{$direction-name} {
+  .#{$prefix}#{$align}-d-#{$direction-name} {
     display: flex;
     flex-direction: $direction-value;
   }
@@ -26,7 +26,7 @@ $wrap-types: (
 @each $mq in $media-queries {
   @each $mq-name, $mq-value in $mq {
     @each $direction-name, $direction-value in $flex-directions {
-      .#{$prefix}#{$align}-d#{$direction-name}--#{$mq-name} {
+      .#{$mq-name}:#{$prefix}#{$align}-d-#{$direction-name} {
         @media #{$mq-value} {
           display: flex;
           flex-direction: $direction-value;
@@ -39,7 +39,7 @@ $wrap-types: (
 // generate align direction classes with wrap
 @each $wrap-name, $wrap-value in $wrap-types {
   @each $direction-name, $direction-value in $flex-directions {
-    .#{$prefix}#{$align}-d#{$direction-name}#{$wrap-name} {
+    .#{$prefix}#{$align}-d-#{$direction-name}#{$wrap-name} {
       display: flex;
       flex-direction: $direction-value;
       flex-wrap: $wrap-value;
@@ -52,7 +52,7 @@ $wrap-types: (
   @each $mq-name, $mq-value in $mq {
     @each $wrap-name, $wrap-value in $wrap-types {
       @each $direction-name, $direction-value in $flex-directions {
-        .#{$prefix}#{$align}-d#{$direction-name}#{$wrap-name}--#{$mq-name} {
+        .#{$mq-name}:#{$prefix}#{$align}-d-#{$direction-name}#{$wrap-name} {
           @media #{$mq-value} {
             display: flex;
             flex-direction: $direction-value;
