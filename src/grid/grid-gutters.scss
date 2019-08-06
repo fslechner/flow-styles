@@ -1,0 +1,54 @@
+//////////////////////////////////////////////////////////
+// Grid gutters
+//////////////////////////////////////////////////////////
+
+$gutter-directions: (
+  "h": "grid-column-gap",
+  "v": "grid-row-gap"
+);
+
+// generate grid-gutters (same value for both directions)
+@each $gutter-level, $gutter-multiplier in $size-multipliers {
+  .#{$prefix}#{$grid}-g-#{$gutter-level} {
+    grid-column-gap: $gutter-multiplier * $base-spacing;
+    grid-row-gap: $gutter-multiplier * $base-spacing;
+  }
+}
+
+// generate grid-gutters with media queries (individual values for both directions)
+@each $mq in $media-queries {
+  @each $mq-name, $mq-value in $mq {
+    @each $gutter-level, $gutter-multiplier in $size-multipliers {
+      .#{$mq-name}\:#{$prefix}#{$grid}-g-#{$gutter-level} {
+        @media #{$mq-value} {
+          grid-column-gap: $gutter-multiplier * $base-spacing;
+          grid-row-gap: $gutter-multiplier * $base-spacing;
+        }
+      }
+    }
+  }
+}
+
+// generate grid-gutters with directions
+@each $direction-name, $direction-value in $gutter-directions {
+  @each $gutter-level, $gutter-multiplier in $size-multipliers {
+    .#{$prefix}#{$grid}-g#{$direction-name}-#{$gutter-level} {
+      #{$direction-value}: $gutter-multiplier * $base-spacing;
+    }
+  }
+}
+
+// generate grid-gutters with directions and media queries
+@each $mq in $media-queries {
+  @each $mq-name, $mq-value in $mq {
+    @each $direction-name, $direction-value in $gutter-directions {
+      @each $gutter-level, $gutter-multiplier in $size-multipliers {
+        .#{$mq-name}\:#{$prefix}#{$grid}-g#{$direction-name}-#{$gutter-level} {
+          @media #{$mq-value} {
+            #{$direction-value}: $gutter-multiplier * $base-spacing;
+          }
+        }
+      }
+    }
+  }
+}

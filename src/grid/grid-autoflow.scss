@@ -1,0 +1,41 @@
+//////////////////////////////////////////////////////////
+// Grid Autoflow
+//////////////////////////////////////////////////////////
+
+// generate grid auto-flow classes
+@each $direction-name, $direction-value in $grid-directions {
+  @each $grid-value in $grids {
+    .#{$prefix}#{$grid}-a#{$direction-name} {
+      @if $direction-name == h {
+        display: grid;
+        grid-auto-flow: column;
+      }
+      @if $direction-name == v {
+        display: grid;
+        grid-auto-flow: row;
+      }
+    }
+  }
+}
+
+// genearte grid auto-flow classes with media queries
+@each $mq in $media-queries {
+  @each $mq-name, $mq-value in $mq {
+    @each $direction-name, $direction-value in $grid-directions {
+      @each $grid-value in $grids {
+        .#{$mq-name}\:#{$prefix}#{$grid}-a#{$direction-name} {
+          @media #{$mq-value} {
+            @if direction-name == h {
+              display: grid;
+              grid-auto-flow: column;
+            }
+            @if direction-name == v {
+              display: grid;
+              grid-auto-flow: row;
+            }
+          }
+        }
+      }
+    }
+  }
+}

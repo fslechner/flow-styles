@@ -1,16 +1,6 @@
 # Grid Dimension
 
-Set a CSS-Grid to an element. Therefore you have to set **display: grid** to use CSS-Grid.
-
-```html
-<div class="gr">Item</div>
-```
-
-```css
-.gr {
-  display: grid;
-}
-```
+Set a CSS-Grid to an element.
 
 ## Options
 
@@ -22,36 +12,33 @@ Set a CSS-Grid to an element. Therefore you have to set **display: grid** to use
 - vertical (v)
 - horizontal & vertical ()
 
-### Columns & rows same number: **gr gr-3**
+### horizontal & vertical same count: **gr gr-3**
 
 ```html
-<div class="gr gr-3">Item</div>
+<div class="gr-3">Item</div>
 ```
 
 ```css
-.gr {
-  display: grid;
-}
 .gr-3 {
+  display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
 }
 ```
 
-### Columns & rows different number: **gr gr-h3 gr-v2**
+### horizontal & vertical different count: **gr-h-3 gr-v-2**
 
 ```html
-<div class="gr gr-h3 gr-v2">Item</div>
+<div class="gr gr-h-3 gr-v-2">Item</div>
 ```
 
 ```css
-.gr {
-  display: grid;
-}
 .gr-h3 {
+  display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
 .gr-v2 {
+  display: grid;
   grid-template-rows: repeat(2, 1fr);
 }
 ```

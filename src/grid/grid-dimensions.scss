@@ -1,0 +1,62 @@
+//////////////////////////////////////////////////////////
+// Grid Dimensions
+//////////////////////////////////////////////////////////
+
+$grid-directions: (
+  "h": "grid-template-columns",
+  "v": "grid-template-rows"
+);
+
+.#{$prefix}#{$grid} {
+  display: grid;
+}
+
+// generate grid classes (one value for both directions)
+@each $grid-value in $grids {
+  .#{$prefix}#{$grid}-#{$grid-value} {
+    display: grid;
+    grid-template-columns: repeat($grid-value, 1fr);
+    grid-template-rows: repeat($grid-value, 1fr);
+  }
+}
+
+// generate grid classes with media queries (one value for both directions)
+@each $mq in $media-queries {
+  @each $mq-name, $mq-value in $mq {
+    @each $grid-value in $grids {
+      .#{$mq-name}\:#{$prefix}#{$grid}-#{$grid-value} {
+        @media #{$mq-value} {
+          display: grid;
+          grid-template-columns: repeat($grid-value, 1fr);
+          grid-template-rows: repeat($grid-value, 1fr);
+        }
+      }
+    }
+  }
+}
+
+// generate grid direction classes (inividual values for both direction)
+@each $direction-name, $direction-value in $grid-directions {
+  @each $grid-value in $grids {
+    .#{$prefix}#{$grid}-#{$direction-name}-#{$grid-value} {
+      display: grid;
+      #{$direction-value}: repeat($grid-value, 1fr);
+    }
+  }
+}
+
+// generate grid direction classes with media queries (inividual values for both direction)
+@each $mq in $media-queries {
+  @each $mq-name, $mq-value in $mq {
+    @each $direction-name, $direction-value in $grid-directions {
+      @each $grid-value in $grids {
+        .#{$mq-name}\:#{$prefix}#{$grid}-#{$direction-name}-#{$grid-value} {
+          @media #{$mq-value} {
+            display: grid;
+            #{$direction-value}: repeat($grid-value, 1fr);
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,7 +1,7 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
 import gridDimension from "./grid-dimension.md";
-import gridGutter from "./grid-gutter.md";
+import gridGutters from "./grid-gutters.md";
 import gridAutoflow from "./grid-autoflow.md";
 import gridResponsive from "./grid-responsive.md";
 
@@ -9,7 +9,7 @@ storiesOf("Grid (gr)", module).add(
   "Grid Dimension",
   () => (
     <div>
-      <div className="gr gr-3">
+      <div className="gr-3">
         <div>Item1</div>
         <div>Item2</div>
         <div>Item3</div>
@@ -31,7 +31,7 @@ storiesOf("Grid (gr)", module).add(
   "Grid Gutter",
   () => (
     <div>
-      <div className="gr gr-h3 gr-v2">
+      <div className="gr-gh-3 gr-gv-2">
         <div>Item1</div>
         <div>Item2</div>
         <div>Item3</div>
@@ -42,7 +42,7 @@ storiesOf("Grid (gr)", module).add(
     </div>
   ),
   {
-    notes: { markdown: gridGutter }
+    notes: { markdown: gridGutters }
   }
 );
 
@@ -50,7 +50,7 @@ storiesOf("Grid (gr)", module).add(
   "Grid Autoflow",
   () => (
     <div>
-      <div className="gr gr-h3 gr-v2 gr-ha">
+      <div className="gr-h-3 gr-v-2 gr-ah">
         <div>Item1</div>
         <div>Item2</div>
         <div>Item3</div>
@@ -69,7 +69,7 @@ storiesOf("Grid (gr)", module).add(
   "Grid Responsive",
   () => (
     <div>
-      <div className="gr gr-3">
+      <div className="sml:gr-3 smu:gr-4">
         <div className="ce-9">Item1</div>
         <div className="ce-8">Item2</div>
         <div className="ce-7">Item3</div>
