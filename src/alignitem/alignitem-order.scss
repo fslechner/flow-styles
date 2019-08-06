@@ -4,7 +4,7 @@
 
 // generate alignitem order classes
 @each $value in $order-numbers {
-  .#{$prefix}#{$alignitem}-o#{$value} {
+  .#{$prefix}#{$alignitem}-o-#{$value} {
     order: $value;
   }
 }
@@ -13,7 +13,7 @@
 @each $mq in $media-queries {
   @each $mq-name, $mq-value in $mq {
     @each $value in $order-numbers {
-      .#{$prefix}#{$alignitem}-o#{$value}--#{$mq-name} {
+      .#{$mq-name}:#{$prefix}#{$alignitem}-o-#{$value} {
         @media #{$mq-value} {
           order: $value;
         }

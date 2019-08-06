@@ -14,28 +14,28 @@ Every \$media-queries entry is possible to use. Predefined breakpoints are xsl, 
 
 ## Static Examples
 
-### Alignitem order -2: **ali-o-2**
+### Alignitem order -2: **ali-o--2**
+
+```html
+<div class="ali-o--2">Item</div>
+```
+
+### Alignitem order 2: **ali-o-2**
 
 ```html
 <div class="ali-o-2">Item</div>
 ```
 
-### Alignitem order 2: **ali-o2**
-
-```html
-<div class="ali-o2">Item</div>
-```
-
 ## Responsive Examples
 
-### Alignitem order 2 between breakpoint sm and md: **ali-o2--sm**
+### Alignitem order 2 between breakpoint sm and md: **sm:ali-o-2**
 
 ```html
-<div class="ali-o2--sm">Item</div>
+<div class="sm:ali-o-2">Item</div>
 ```
 
-### Alignitem order 2 lower and order 3 upper breakpoint sm: **ali-o2--sml ali-o3--smu**
+### Alignitem order 2 lower and order 3 upper breakpoint sm: **sml:ali-o-2 smu:ali-o-3**
 
 ```html
-<div class="ali-o2--sml ali-o3--smu">Item</div>
+<div class="sml:ali-o-2 smu:ali-o-3">Item</div>
 ```

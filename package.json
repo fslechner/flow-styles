@@ -1,7 +1,7 @@
 {
   "name": "flow-styles",
   "version": "0.0.1",
-  "description": "An Atomic CSS Library and Styleguidist",
+  "description": "An Atomic CSS Library",
   "author": "Frank Simon Lechner",
   "license": "MIT",
   "main": "src/index.scss",

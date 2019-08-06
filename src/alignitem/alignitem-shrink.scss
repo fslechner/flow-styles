@@ -4,7 +4,7 @@
 
 // generate alignitem flexshrink classes
 @each $value in $shrink-numbers {
-  .#{$prefix}#{$alignitem}-s#{$value} {
+  .#{$prefix}#{$alignitem}-s-#{$value} {
     flex-shrink: $value;
   }
 }
@@ -13,7 +13,7 @@
 @each $mq in $media-queries {
   @each $mq-name, $mq-value in $mq {
     @each $value in $shrink-numbers {
-      .#{$prefix}#{$alignitem}-s#{$value}--#{$mq-name} {
+      .#{$mq-name}:#{$prefix}#{$alignitem}-s-#{$value} {
         @media #{$mq-value} {
           flex-shrink: $value;
         }

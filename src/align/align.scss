@@ -6,6 +6,10 @@
 @import "align-horizontal";
 @import "align-vertical";
 
+.#{$prefix}#{$align} {
+  display: flex;
+}
+
 // TODO: add to docs
 // Shortcut for centering vertical and horizontal at once
 .#{$prefix}#{$align}-c {

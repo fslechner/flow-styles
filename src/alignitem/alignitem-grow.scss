@@ -4,7 +4,7 @@
 
 // generate alignitem flexgrow classes
 @each $value in $grow-numbers {
-  .#{$prefix}#{$alignitem}-g#{$value} {
+  .#{$prefix}#{$alignitem}-g-#{$value} {
     flex-grow: $value;
   }
 }
@@ -13,7 +13,7 @@
 @each $mq in $media-queries {
   @each $mq-name, $mq-value in $mq {
     @each $value in $grow-numbers {
-      .#{$prefix}#{$alignitem}-g#{$value}--#{$mq-name} {
+      .#{$mq-name}:#{$prefix}#{$alignitem}-g-#{$value} {
         @media #{$mq-value} {
           flex-grow: $value;
         }

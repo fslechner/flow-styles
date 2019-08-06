@@ -14,28 +14,28 @@ Every \$media-queries entry is possible to use. Predefined breakpoints are xsl, 
 
 ## Static Examples
 
-### Alignitem grow 1: **ali-g1**
+### Alignitem grow 1: **ali-g-1**
 
 ```html
-<div class="ali-g1">Item</div>
+<div class="ali-g-1">Item</div>
 ```
 
-### Alignitem grow 6: **ali-g6**
+### Alignitem grow 6: **ali-g-6**
 
 ```html
-<div class="ali-g6">Item</div>
+<div class="ali-g-6">Item</div>
 ```
 
 ## Responsive Examples
 
-### Alignitem grow 2 between breakpoint sm and md: **ali-g2--sm**
+### Alignitem grow 2 between breakpoint sm and md: **sm:ali-g-2**
 
 ```html
-<div class="ali-g2--sm">Item</div>
+<div class="sm:ali-g-2">Item</div>
 ```
 
-### Alignitem grow 2 lower and grow 3 upper breakpoint sm: **ali-g2--sml ali-g3--smu**
+### Alignitem grow 2 lower and grow 3 upper breakpoint sm: **sml:ali-g-2 smu:ali-g-3**
 
 ```html
-<div class="ali-g2--sml ali-g3--smu">Item</div>
+<div class="sml:ali-g-2 smu:ali-g-3">Item</div>
 ```

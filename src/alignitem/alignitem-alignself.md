@@ -18,46 +18,46 @@ Every \$media-queries entry is possible to use. Predefined breakpoints are xsl, 
 
 ## Static Examples
 
-### Alignitem align top: **ali-at**
+### Alignitem align top: **ali-as-t**
 
 ```html
-<div class="ali-at">Alignitem</div>
+<div class="ali-as-t">Alignitem</div>
 ```
 
-### Alignitem align center: **ali-ac**
+### Alignitem align center: **ali-as-c**
 
 ```html
-<div class="ali-ac">Alignitem</div>
+<div class="ali-as-c">Alignitem</div>
 ```
 
-### Alignitem align bottom: **ali-ab**
+### Alignitem align bottom: **ali-as-b**
 
 ```html
-<div class="ali-ab">Alignitem</div>
+<div class="ali-as-b">Alignitem</div>
 ```
 
-### Alignitem align stretch: **ali-as**
+### Alignitem align stretch: **ali-as-s**
 
 ```html
-<div class="ali-as">Alignitem</div>
+<div class="ali-as-s">Alignitem</div>
 ```
 
-### Alignitem align-self baseline: **ali-abl**
+### Alignitem align-self baseline: **ali-as-bl**
 
 ```html
-<div class="ali-abl">Alignitem</div>
+<div class="ali-as-bl">Alignitem</div>
 ```
 
 ## Responsive Examples
 
-### Alignitem align right between breakpoint sm and md: **ali-ar--sm**
+### Alignitem align-self right between breakpoint sm and md: **sm:ali-as-r**
 
 ```html
-<div class="ali-ar--sm">Item</div>
+<div class="sm:ali-as-r">Item</div>
 ```
 
-### Alignitem align right lower and bottom upper breakpoint sm: **ali-ar--sml ali-sb--smu**
+### Alignitem align-self right lower and bottom upper breakpoint sm: **sml:ali-as-r smu:ali-as-b**
 
 ```html
-<div class="ali-ar--sml ali-sb--smu">Item</div>
+<div class="sml:ali-as-r smu:ali-as-b">Item</div>
 ```
