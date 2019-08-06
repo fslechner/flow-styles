@@ -21,40 +21,46 @@ Every \$media-queries entry is possible to use. Predefined breakpoints are xsl, 
 
 ## Static Examples
 
-### Heading style primary size h1: **he-p-h1**
+### Heading size h1 style primary : **he-h1-p**
 
 ```html
-<div class="he-p-h1">Item</div>
+<div class="he-h1-p">Item</div>
 ```
 
-### Heading style primary size h2: **he-p-h2**
+### Heading size h2 style primary : **he-h2-p**
 
 ```html
-<div class="he-p-h2">Item</div>
+<div class="he-h2-p">Item</div>
 ```
 
-### Heading style primary size h3: **he-p-h3**
+### Heading size h3 style primary : **he-h3-p**
 
 ```html
-<div class="he-p-h3">Item</div>
+<div class="he-h3-p">Item</div>
 ```
 
-### Heading style one size h4: **he-p-h4**
+### Heading style one size h4: **he-h4-p**
 
 ```html
-<div class="he-p-h4">Item</div>
+<div class="he-h4-p">Item</div>
 ```
 
-### Heading style primary size h5: **he-p-h5**
+### Heading style primary size h5: **he-h5-p**
 
 ```html
-<div class="he-p-h5">Item</div>
+<div class="he-h5-p">Item</div>
 ```
 
-### Heading style primary size h6: **he-p-h6**
+### Heading style primary size h6: **he-h6-p**
 
 ```html
-<div class="he-p-h6">Item</div>
+<div class="he-h6-p">Item</div>
 ```
 
 ## Responsive Examples
+
+### Heading size h6 upper breakpoint sm and size h5 lower breakpoint sm: **sml:he-h5-p smu:he-h6-p**
+
+```html
+<div class="sml:he-h5-p smu:he-h6-p">Item</div>
+```
