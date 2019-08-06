@@ -20,7 +20,7 @@ storiesOf("Custom (cu)", module).add(
   "Custom Responsive",
   () => (
     <div>
-      <div className="cu-triangle--sml cu-trapezoid--md cu-circle--lgu" />
+      <div className="sml:cu-triangle md:cu-trapezoid lgu:cu-circle" />
     </div>
   ),
   {

@@ -28,7 +28,7 @@ storiesOf("Border (bo)", module).add(
   "Border Responsive",
   () => (
     <div>
-      <div className="bo-one--sml bo-two--md bo-three--lgu sp-m2">
+      <div className="sml:bo-one md:bo-two lgu:bo-three sp-m2">
         <b>Border by Viewports</b>
       </div>
     </div>

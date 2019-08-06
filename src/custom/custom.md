@@ -28,14 +28,14 @@ Every \$media-queries entry is possible to use. Predefined breakpoints are xsl, 
 
 ## Responsive Examples
 
-### Custom style circle between breakpoint sm and md: **cu-circle--sm**
+### Custom style circle between breakpoint sm and md: **sm:cu-circle**
 
 ```html
-<div class="cu-circle--sm">Item</div>
+<div class="sm:cu-circle">Item</div>
 ```
 
-### Custom style circle lower and triangle upper breakpoint sm: **cu-circle--sml cu-triangle-smu**
+### Custom style circle lower and triangle upper breakpoint sm: **sml:cu-circle smu:cu-triangle**
 
 ```html
-<div class="cu-circle--sml cu-triangle-smu">Item</div>
+<div class="sml:cu-circle smu:cu-triangle">Item</div>
 ```
