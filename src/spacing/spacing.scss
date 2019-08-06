@@ -18,7 +18,7 @@ $spacing-axis-directions: "v", "h";
 // all edges one value e.g. margin: 4rem;
 @each $spacing-name, $spacing-value in $spacing-types {
   @each $size-name, $size-value in $size-multipliers {
-    .#{$prefix}#{$spacing}-#{$spacing-name}#{$size-name} {
+    .#{$prefix}#{$spacing}-#{$spacing-name}-#{$size-name} {
       #{$spacing-value}: $size-value * $base-spacing;
     }
   }
@@ -30,7 +30,7 @@ $spacing-axis-directions: "v", "h";
   @each $mq-name, $mq-value in $mq {
     @each $spacing-name, $spacing-value in $spacing-types {
       @each $size-name, $size-value in $size-multipliers {
-        .#{$prefix}#{$spacing}-#{$spacing-name}#{$size-name}--#{$mq-name} {
+        .#{$mq-name}\:#{$prefix}#{$spacing}-#{$spacing-name}-#{$size-name} {
           @media #{$mq-value} {
             #{$spacing-value}: $size-value * $base-spacing;
           }
@@ -45,7 +45,7 @@ $spacing-axis-directions: "v", "h";
 @each $spacing-name, $spacing-value in $spacing-types {
   @each $direction-name, $direction-value in $spacing-edge-directions {
     @each $size-name, $size-value in $size-multipliers {
-      .#{$prefix}#{$spacing}-#{$spacing-name}#{$direction-name}#{$size-name} {
+      .#{$prefix}#{$spacing}-#{$spacing-name}#{$direction-name}-#{$size-name} {
         #{$spacing-value}-#{$direction-value}: $size-value * $base-spacing;
       }
     }
@@ -59,7 +59,7 @@ $spacing-axis-directions: "v", "h";
     @each $spacing-name, $spacing-value in $spacing-types {
       @each $direction-name, $direction-value in $spacing-edge-directions {
         @each $size-name, $size-value in $size-multipliers {
-          .#{$prefix}#{$spacing}-#{$spacing-name}#{$direction-name}#{$size-name}--#{$mq-name} {
+          .#{$mq-name}\:#{$prefix}#{$spacing}-#{$spacing-name}#{$direction-name}-#{$size-name} {
             @media #{$mq-value} {
               #{$spacing-value}-#{$direction-value}: $size-value * $base-spacing;
             }
@@ -76,13 +76,13 @@ $spacing-axis-directions: "v", "h";
   @each $direction-name, $direction-value in $spacing-axis-directions {
     @each $size-name, $size-value in $size-multipliers {
       @if $direction-name == "v" {
-        .#{$prefix}#{$spacing}-#{$spacing-name}#{$direction-name}#{$size-name} {
+        .#{$prefix}#{$spacing}-#{$spacing-name}#{$direction-name}-#{$size-name} {
           #{$spacing-value}-top: $size-value * $base-spacing;
           #{$spacing-value}-bottom: $size-value * $base-spacing;
         }
       }
       @if $direction-name == "h" {
-        .#{$prefix}#{$spacing}-#{$spacing-name}#{$direction-name}#{$size-name} {
+        .#{$prefix}#{$spacing}-#{$spacing-name}#{$direction-name}-#{$size-name} {
           #{$spacing-value}-left: $size-value * $base-spacing;
           #{$spacing-value}-right: $size-value * $base-spacing;
         }
@@ -99,7 +99,7 @@ $spacing-axis-directions: "v", "h";
       @each $direction-name in $spacing-axis-directions {
         @each $size-name, $size-value in $size-multipliers {
           @if $direction-name == "v" {
-            .#{$prefix}#{$spacing}-#{$spacing-name}#{$direction-name}#{$size-name}--#{$mq-name} {
+            .#{$mq-name}\:#{$prefix}#{$spacing}-#{$spacing-name}#{$direction-name}-#{$size-name} {
               @media #{$mq-value} {
                 #{$spacing-value}-top: $size-value * $base-spacing;
                 #{$spacing-value}-bottom: $size-value * $base-spacing;
@@ -107,7 +107,7 @@ $spacing-axis-directions: "v", "h";
             }
           }
           @if $direction-name == "h" {
-            .#{$prefix}#{$spacing}-#{$spacing-name}#{$direction-name}#{$size-name}--#{$mq-name} {
+            .#{$mq-name}\:#{$prefix}#{$spacing}-#{$spacing-name}#{$direction-name}-#{$size-name} {
               @media #{$mq-value} {
                 #{$spacing-value}-left: $size-value * $base-spacing;
                 #{$spacing-value}-right: $size-value * $base-spacing;
