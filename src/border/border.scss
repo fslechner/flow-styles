@@ -15,7 +15,7 @@
 @each $mq in $media-queries {
   @each $mq-name, $mq-value in $mq {
     @each $style-name, $style-value in $border-styles {
-      .#{$prefix}#{$border}-#{$style-name}--#{$mq-name} {
+      .#{$mq-name}\:#{$prefix}#{$border}-#{$style-name} {
         @media #{$mq-value} {
           @each $attr, $value in $style-value {
             #{$attr}: $value;
