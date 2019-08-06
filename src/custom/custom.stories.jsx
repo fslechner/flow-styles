@@ -2,7 +2,7 @@ import React from "react";
 import { storiesOf } from "@storybook/react";
 import custom from "./custom.md";
 
-storiesOf("Custom", module).add(
+storiesOf("Custom (cu)", module).add(
   "Custom Styles",
   () => (
     <div>
@@ -16,7 +16,7 @@ storiesOf("Custom", module).add(
   }
 );
 
-storiesOf("Custom", module).add(
+storiesOf("Custom (cu)", module).add(
   "Custom Responsive",
   () => (
     <div>

@@ -2,7 +2,7 @@ import React from "react";
 import { storiesOf } from "@storybook/react";
 import background from "./background.md";
 
-storiesOf("Background", module).add(
+storiesOf("Background (ba)", module).add(
   "Background Color",
   () => (
     <div>
@@ -31,7 +31,7 @@ storiesOf("Background", module).add(
   }
 );
 
-storiesOf("Background", module).add(
+storiesOf("Background (ba)", module).add(
   "Background Responsive",
   () => (
     <div>

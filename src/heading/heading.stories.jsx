@@ -3,7 +3,7 @@ import { storiesOf } from "@storybook/react";
 import headingStyle from "./heading-style.md";
 import headingSize from "./heading-size.md";
 
-storiesOf("Heading", module).add(
+storiesOf("Heading (he)", module).add(
   "Heading Styles",
   () => (
     <div>
@@ -26,7 +26,7 @@ storiesOf("Heading", module).add(
   }
 );
 
-storiesOf("Heading", module).add(
+storiesOf("Heading (he)", module).add(
   "Heading Sizes",
   () => (
     <div>
@@ -43,7 +43,7 @@ storiesOf("Heading", module).add(
   }
 );
 
-storiesOf("Heading", module).add(
+storiesOf("Heading  (he)", module).add(
   "Heading Responsive",
   () => (
     <div>

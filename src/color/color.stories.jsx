@@ -2,7 +2,7 @@ import React from "react";
 import { storiesOf } from "@storybook/react";
 import color from "./color.md";
 
-storiesOf("Color", module).add(
+storiesOf("Color (co)", module).add(
   "Color Color",
   () => (
     <div>
@@ -33,7 +33,7 @@ storiesOf("Color", module).add(
   }
 );
 
-storiesOf("Color", module).add(
+storiesOf("Color (co)", module).add(
   "Color Responsive",
   () => (
     <div>

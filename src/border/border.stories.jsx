@@ -2,7 +2,7 @@ import React from "react";
 import { storiesOf } from "@storybook/react";
 import border from "./border.md";
 
-storiesOf("Border", module).add(
+storiesOf("Border (bo)", module).add(
   "Border Style",
   () => (
     <div>
@@ -24,7 +24,7 @@ storiesOf("Border", module).add(
   }
 );
 
-storiesOf("Border", module).add(
+storiesOf("Border (bo)", module).add(
   "Border Responsive",
   () => (
     <div>
