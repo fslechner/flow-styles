@@ -18,7 +18,7 @@ $visibility-states: (
 @each $mq in $media-queries {
   @each $mq-name, $mq-value in $mq {
     @each $visibility-name, $visibility-value in $visibility-states {
-      .#{$prefix}#{$visibility}-#{$visibility-name}--#{$mq-name} {
+      .#{$mq-name}\:#{$prefix}#{$visibility}-#{$visibility-name} {
         @media #{$mq-value} {
           display: $visibility-value;
         }

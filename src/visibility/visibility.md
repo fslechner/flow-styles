@@ -43,14 +43,14 @@ Every \$media-queries entry is possible to use. Predefined breakpoints are xsl, 
 
 ## Responsive Examples
 
-### Visibility hide between breakpoints sm and md: **vi-h--sm **
+### Visibility hide between breakpoints sm and md: **sm:vi-h**
 
 ```html
-<div class="vi-h--sm">Item</div>
+<div class="sm:vi-h">Item</div>
 ```
 
-### Visibility hide lower and show upper breakpoints sm: **vi-h--sml**
+### Visibility hide lower and show upper breakpoints sm: **sml:vi-h**
 
 ```html
-<div class="vi-h--sml">Item</div>
+<div class="sml:vi-h">Item</div>
 ```
