@@ -28,10 +28,24 @@ Every \$media-queries entry is possible to use. Predefined breakpoints are xsl, 
 <div class="al-d-h">Item</div>
 ```
 
+```css
+.al-d-h {
+  display: flex;
+  flex-direction: row;
+}
+```
+
 ### Align Direction Horizontal Reverse: **al-d-hr**
 
 ```html
 <div class="al-d-hr">Item</div>
+```
+
+```css
+.al-d-hr {
+  display: flex;
+  flex-direction: row-reverse;
+}
 ```
 
 ## Align Direction Vertical: **al-d-v**
@@ -40,10 +54,24 @@ Every \$media-queries entry is possible to use. Predefined breakpoints are xsl, 
 <div class="al-d-v">Item</div>
 ```
 
+```css
+.al-d-v {
+  display: flex;
+  flex-direction: column;
+}
+```
+
 ## Align Direction Vertical Reverse: **al-d-vr**
 
 ```html
 <div class="al-d-vr">Item</div>
+```
+
+```css
+.al-d-vr {
+  display: flex;
+  flex-direction: column-reverse;
+}
 ```
 
 ## Align Direction Horizontal Wrap: **al-d-hw**
@@ -52,10 +80,26 @@ Every \$media-queries entry is possible to use. Predefined breakpoints are xsl, 
 <div class="al-d-hw">Item</div>
 ```
 
+```css
+.al-d-hw {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+```
+
 ## Align Direction Horizontal Wrap Reverse: **al-d-hwr**
 
 ```html
 <div class="al-d-hwr">Item</div>
+```
+
+```css
+.al-d-hwr {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap-reverse;
+}
 ```
 
 ## Align Direction Horizontal Reverse Wrap : **al-d-hrw**
@@ -64,10 +108,26 @@ Every \$media-queries entry is possible to use. Predefined breakpoints are xsl, 
 <div class="al-d-hrw">Item</div>
 ```
 
+```css
+.al-d-hrw {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+}
+```
+
 ## Align Direction Horizontal Reverse Wrap Reverse: **al-d-hrwr**
 
 ```html
 <div class="al-d-hrwr">Item</div>
+```
+
+```css
+.al-d-hrwr {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap-reverse;
+}
 ```
 
 ## Align Direction Vertical Wrap: **al-d-vw**
@@ -76,10 +136,26 @@ Every \$media-queries entry is possible to use. Predefined breakpoints are xsl, 
 <div class="al-d-vw">Item</div>
 ```
 
+```css
+.al-d-vw {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+```
+
 ## Align Direction Vertical Wrap Reverse: **al-d-vwr**
 
 ```html
 <div class="al-d-vwr">Item</div>
+```
+
+```css
+.al-d-vwr {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap-reverse;
+}
 ```
 
 ## Align Direction Vertical Reverse Wrap: **al-d-vrw**
@@ -88,10 +164,26 @@ Every \$media-queries entry is possible to use. Predefined breakpoints are xsl, 
 <div class="al-d-vrw">Item</div>
 ```
 
+```css
+.al-d-vrw {
+  display: flex;
+  flex-direction: column-reverse;
+  flex-wrap: wrap;
+}
+```
+
 ## Align Direction Vertical Reverse Wrap Reverse: **al-d-vrwr**
 
 ```html
 <div class="al-d-vrwr">Item</div>
+```
+
+```css
+.al-d-vrwr {
+  display: flex;
+  flex-direction: column-reverse;
+  flex-wrap: wrap-reverse;
+}
 ```
 
 ## Responsive Examples

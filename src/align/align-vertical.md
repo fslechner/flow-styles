@@ -24,10 +24,24 @@ Every \$media-queries entry is possible to use. Predefined breakpoints are xsl, 
 <div class="al-v-t">Item</div>
 ```
 
+```css
+.al-v-t {
+  display: flex;
+  align-items: flex-start;
+}
+```
+
 ### Align vertical center: **al-v-c**
 
 ```html
 <div class="al-v-c">Item</div>
+```
+
+```css
+.al-v-c {
+  display: flex;
+  align-items: center;
+}
 ```
 
 ### Align vertical bottom: **al-v-b**
@@ -36,16 +50,37 @@ Every \$media-queries entry is possible to use. Predefined breakpoints are xsl, 
 <div class="al-v-b">Item</div>
 ```
 
+```css
+.al-v-b {
+  display: flex;
+  align-items: flex-end;
+}
+```
+
 ### Align vertical stretch: **al-v-s**
 
 ```html
 <div class="al-v-s">Item</div>
 ```
 
+```css
+.al-v-s {
+  display: flex;
+  align-items: stretch;
+}
+```
+
 ### Align vertical baseline: **al-v-bl**
 
 ```html
 <div class="al-v-bl">Item</div>
+```
+
+```css
+.al-v-bl {
+  display: flex;
+  align-items: baseline;
+}
 ```
 
 ## Responsive Examples

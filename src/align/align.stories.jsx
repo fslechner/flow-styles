@@ -6,7 +6,7 @@ import alignDirection from "./align-direction.md";
 import alignContent from "./align-content.md";
 
 storiesOf("Align (al)", module).add(
-  "Align Horizontal",
+  "Align Horizontal (al-h)",
   () => (
     <div className="">
       <div className="al-h-l al-h-box sp-m2">
@@ -50,7 +50,7 @@ storiesOf("Align (al)", module).add(
 );
 
 storiesOf("Align (al)", module).add(
-  "Align Vertical",
+  "Align Vertical (al-v)",
   () => (
     <div>
       <div className="al-v-t al-v-box sp-m2">
@@ -76,7 +76,7 @@ storiesOf("Align (al)", module).add(
 );
 
 storiesOf("Align (al)", module).add(
-  "Align Direction",
+  "Align Direction (al-d)",
   () => (
     <div className="sp-m4">
       <h3>Align Direction Horizontal: al-d-h</h3>
@@ -196,7 +196,7 @@ storiesOf("Align (al)", module).add(
 );
 
 storiesOf("Align (al)", module).add(
-  "Align Content",
+  "Align Content (al-c)",
   () => (
     <div>
       <h3>Align Content Top: al-c-t</h3>
