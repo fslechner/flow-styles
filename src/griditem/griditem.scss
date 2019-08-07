@@ -1,0 +1,134 @@
+//////////////////////////////////////////////////////////
+// Griditem
+//////////////////////////////////////////////////////////
+
+$directions: h, v;
+
+$positions: (
+  "hs": "grid-column-start",
+  "he": "grid-column-end",
+  "vs": "grid-row-start",
+  "ve": "grid-row-end"
+);
+
+// generate griditem classes (same value for all)
+@each $griditem-number in $grids {
+  .#{$prefix}#{$griditem}-#{$griditem-number} {
+    grid-column-start: $griditem-number;
+    grid-column-end: $griditem-number;
+    grid-row-start: $griditem-number;
+    grid-row-end: $griditem-number;
+  }
+}
+
+// generate griditem classes with media queries (same value for all)
+@each $mq in $media-queries {
+  @each $mq-name, $mq-value in $mq {
+    @each $griditem-number in $grids {
+      .#{$prefix}#{$griditem}-#{$griditem-number}--#{$mq-name} {
+        @media #{$mq-value} {
+          grid-column-start: $griditem-number;
+          grid-column-end: $griditem-number;
+          grid-row-start: $griditem-number;
+          grid-row-end: $griditem-number;
+        }
+      }
+    }
+  }
+}
+
+// generate griditem classes with directions over complete row or column
+@each $direction in $directions {
+  @each $griditem-number in $grids {
+    .#{$prefix}#{$griditem}-#{$direction} {
+      @if $direction == h {
+        grid-column: 1 / -1;
+      }
+      @if $direction == v {
+        grid-row: 1 / -1;
+      }
+    }
+  }
+}
+
+// generate cell classes with directions over complete row or column and media queries
+@each $mq in $media-queries {
+  @each $mq-name, $mq-value in $mq {
+    @each $direction in $directions {
+      @each $griditem-number in $grids {
+        .#{$mq-name}\:#{$prefix}#{$griditem}-#{$direction} {
+          @media #{$mq-value} {
+            @if $direction == h {
+              grid-column: 1 / -1;
+            }
+            @if $direction == v {
+              grid-row: 1 / -1;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// generate griditem classes with directions (same value for start and end for each direction)
+@each $direction in $directions {
+  @each $griditem-number in $grids {
+    .#{$prefix}#{$griditem}-#{$direction}#{$griditem-number} {
+      @if $direction == h {
+        grid-column-start: $griditem-number;
+        grid-column-end: $griditem-number;
+      }
+      @if $direction == v {
+        grid-row-start: $griditem-number;
+        grid-row-end: $griditem-number;
+      }
+    }
+  }
+}
+
+// generate griditem classes with directions and media queries (same value for start and end)
+@each $mq in $media-queries {
+  @each $mq-name, $mq-value in $mq {
+    @each $direction in $directions {
+      @each $griditem-number in $grids {
+        .#{$mq-name}\:#{$prefix}#{$griditem}-#{$direction}#{$griditem-number} {
+          @media #{$mq-value} {
+            @if $direction == h {
+              grid-column-start: $griditem-number;
+              grid-column-end: $griditem-number;
+            }
+            @if $direction == v {
+              grid-row-start: $griditem-number;
+              grid-row-end: $griditem-number;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// generate griditem classes (individual values for start and end)
+@each $position-name, $position-value in $positions {
+  @each $griditem-number in $grids {
+    .#{$prefix}#{$griditem}-#{$position-name}#{$griditem-number} {
+      #{$position-value}: $griditem-number;
+    }
+  }
+}
+
+// generate griditem classes with media queries (individual values for start and end)
+@each $mq in $media-queries {
+  @each $mq-name, $mq-value in $mq {
+    @each $position-name, $position-value in $positions {
+      @each $griditem-number in $grids {
+        .#{$mq-name}\:#{$prefix}#{$griditem}-#{$position-name}#{$griditem-number} {
+          @media #{$mq-value} {
+            #{$position-value}: $griditem-number;
+          }
+        }
+      }
+    }
+  }
+}

@@ -8,9 +8,10 @@ $align: "al" !default;
 $alignitem: "ali" !default;
 $background: "ba" !default;
 $border: "bo" !default;
-$cell: "ce" !default;
 $color: "co" !default;
 $custom: "cu" !default;
+$grid: "gr" !default;
+$griditem: "gri" !default;
 $heading: "he" !default;
 $layer: "la" !default;
 $rotation: "ro" !default;
@@ -91,9 +92,8 @@ $border-styles: (
   ),
   t: (
     border: 3px dashed rgb(31, 214, 101)
-  )
-  q:
-  (
+  ),
+  q: (
     border: 3px rgb(91, 114, 201)
   )
 ) !default;
@@ -142,7 +142,7 @@ $brand-colors: (
 ) !default;
 
 //////////////////////////////////////////////////////////
-// Grids (Values used in Grid and Cell)
+// Grids
 //////////////////////////////////////////////////////////
 
 $grids: (
@@ -166,6 +166,17 @@ $grids: (
   18,
   19,
   20
+) !default;
+
+//////////////////////////////////////////////////////////
+// Grid Layouts
+//////////////////////////////////////////////////////////
+
+$grid-layout-types: (
+  one: 70px 70px auto,
+  two: auto 30%,
+  three: 20% auto 20%,
+  four: 100px auto 50vh
 ) !default;
 
 //////////////////////////////////////////////////////////
@@ -212,17 +223,6 @@ $heading-sizes: (
     font-size: 2.5rem,
     line-height: 2.5 * 1.2rem
   )
-) !default;
-
-//////////////////////////////////////////////////////////
-// Layout
-//////////////////////////////////////////////////////////
-
-$layout-types: (
-  one: 70px 70px auto,
-  two: auto 30%,
-  three: 20% auto 20%,
-  four: 100px auto 50vh
 ) !default;
 
 //////////////////////////////////////////////////////////
