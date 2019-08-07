@@ -25,7 +25,7 @@ $positions: (
 @each $mq in $media-queries {
   @each $mq-name, $mq-value in $mq {
     @each $griditem-number in $grids {
-      .#{$prefix}#{$griditem}-#{$griditem-number}--#{$mq-name} {
+      .#{$mq-name}\:#{$prefix}#{$griditem}-#{$griditem-number} {
         @media #{$mq-value} {
           grid-column-start: $griditem-number;
           grid-column-end: $griditem-number;
@@ -74,7 +74,7 @@ $positions: (
 // generate griditem classes with directions (same value for start and end for each direction)
 @each $direction in $directions {
   @each $griditem-number in $grids {
-    .#{$prefix}#{$griditem}-#{$direction}#{$griditem-number} {
+    .#{$prefix}#{$griditem}-#{$direction}-#{$griditem-number} {
       @if $direction == h {
         grid-column-start: $griditem-number;
         grid-column-end: $griditem-number;
@@ -92,7 +92,7 @@ $positions: (
   @each $mq-name, $mq-value in $mq {
     @each $direction in $directions {
       @each $griditem-number in $grids {
-        .#{$mq-name}\:#{$prefix}#{$griditem}-#{$direction}#{$griditem-number} {
+        .#{$mq-name}\:#{$prefix}#{$griditem}-#{$direction}-#{$griditem-number} {
           @media #{$mq-value} {
             @if $direction == h {
               grid-column-start: $griditem-number;
@@ -112,7 +112,7 @@ $positions: (
 // generate griditem classes (individual values for start and end)
 @each $position-name, $position-value in $positions {
   @each $griditem-number in $grids {
-    .#{$prefix}#{$griditem}-#{$position-name}#{$griditem-number} {
+    .#{$prefix}#{$griditem}-#{$position-name}-#{$griditem-number} {
       #{$position-value}: $griditem-number;
     }
   }
@@ -123,7 +123,7 @@ $positions: (
   @each $mq-name, $mq-value in $mq {
     @each $position-name, $position-value in $positions {
       @each $griditem-number in $grids {
-        .#{$mq-name}\:#{$prefix}#{$griditem}-#{$position-name}#{$griditem-number} {
+        .#{$mq-name}\:#{$prefix}#{$griditem}-#{$position-name}-#{$griditem-number} {
           @media #{$mq-value} {
             #{$position-value}: $griditem-number;
           }

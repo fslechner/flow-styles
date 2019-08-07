@@ -1,6 +1,6 @@
-# Cell Responsive
+# Griditem Responsive
 
-Set cell positions of an element depending on Viewport-Width.
+Set griditem positions of an element depending on Viewport-Width.
 
 ## Media Queries
 
@@ -8,34 +8,34 @@ Every \$media-queries entry is possible to use. Predefined breakpoints are xsl, 
 
 ## Examples
 
-### Cell Lower Breakpoint XS: **ce-3--xsl**
+### Griditem Lower Breakpoint XS: **ce-3--xsl**
 
-Lower breakpoint xs border cell is at position 3x3. Upper breakpoint xs cell position is inherit.
+Lower breakpoint xs border griditem is at position 3x3. Upper breakpoint xs cell position is inherit.
 
 ```html
-<div class="ce-3--xsl">Item</div>
+<div class="xsl:gri-3">Item</div>
 ```
 
-### Border One Between Breakpoints XS and MD: **ce-3--xs**
+### Border One Between Breakpoints XS and MD: **xs:gri-3**
 
-Between breakpoints xs and sm cell is at position 3x3. Outside breakpoints xs and sm cell position is inherit.
+Between breakpoints xs and sm griditem is at position 3x3. Outside breakpoints xs and sm griditem position is inherit.
 
 ```html
-<div class="ce-3--xs">Item</div>
+<div class="xs:gri-3">Item</div>
 ```
 
-### Border One Upper Breakpoint XS: **ce-3--xsu**
+### Border One Upper Breakpoint XS: **xsU:gri-3**
 
-Upper breakpoint xs cell is at position 3x3. Lower breakpoint xs cell position is inherit.
+Upper breakpoint xs griditem is at position 3x3. Lower breakpoint xs griditem position is inherit.
 
 ```html
-<div class="ce-3--xsu">Item</div>
+<div class="xsu:gri-3">Item</div>
 ```
 
-### Combined Media Queries: **ce-3--xsl ce-2--xsu**
+### Combined Media Queries: **xsl:gri-3 xsu:gri-2**
 
-Lower breakpoint xs cell is at position 3x3. Upper breakpoint xs cell is at position 2x2.
+Lower breakpoint xs griditem is at position 3x3. Upper breakpoint xs griditem is at position 2x2.
 
 ```html
-<div class="ce-3--xsl ce-2--xsu">Item</div>
+<div class="xsl:gri-3 xsu:gri-2">Item</div>
 ```
