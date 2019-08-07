@@ -5,12 +5,12 @@
   "author": "Frank Simon Lechner",
   "license": "MIT",
   "main": "src/index.scss",
-  "private": true,
+  "private": false,
   "scripts": {
     "storybook": "start-storybook -p 6006",
-    "styleguide": "styleguidist server",
-    "styleguide:build": "styleguidist build",
-    "build-storybook": "build-storybook"
+    "storybook:build": "build-storybook",
+    "storybook:serve": "serve ./storybook-static",
+    "storybook:build:serve": "build-storybook && serve ./storybook-static"
   },
   "devDependencies": {
     "@babel/core": "^7.4.4",
@@ -26,6 +26,7 @@
     "postcss-flexbugs-fixes": "^4.1.0",
     "postcss-loader": "^3.0.0",
     "sass-loader": "^7.1.0",
+    "serve": "^11.1.0",
     "style-loader": "^0.23.1",
     "url-loader": "^1.1.2"
   }
