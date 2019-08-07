@@ -1,8 +1,5 @@
-- make Text and heading options optional
 - root docs md
 - test scss variables in storybook
 - poc automate storybook
 - add upper and lower case to text decoration
-- write stories: alignitems
-- change docu: Layout
-- cell to layoutitem
+- integrate Layout into grid
