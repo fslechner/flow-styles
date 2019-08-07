@@ -3,3 +3,5 @@
 - poc automate storybook
 - add upper and lower case to text decoration
 - integrate Layout into grid
+- make package with overrideable config
+- publish package to npm
