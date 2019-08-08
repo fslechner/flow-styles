@@ -8,16 +8,16 @@ storiesOf("Heading (he)", module).add(
   () => (
     <div>
       <div className="he-h1-p sp-m-2">
-        <b>he-h1-p</b>: Heading style primary
+        <b>he-h1-p</b>: Heading size h1 style primary
       </div>
       <div className="he-h1-s sp-m-2">
-        <b>he-h1-s</b>: Heading style secondary
+        <b>he-h1-s</b>: Heading size h1 style secondary
       </div>
       <div className="he-h1-t sp-m-2">
-        <b>he-h1-t</b>: Heading style tertiary
+        <b>he-h1-t</b>: Heading size h1 style tertiary
       </div>
       <div className="he-h1-q sp-m-2">
-        <b>he-h1-q</b>: Heading style quaternary
+        <b>he-h1-q</b>: Heading size h1 style quaternary
       </div>
     </div>
   ),
@@ -43,7 +43,7 @@ storiesOf("Heading (he)", module).add(
   }
 );
 
-storiesOf("Heading  (he)", module).add(
+storiesOf("Heading (he)", module).add(
   "Heading Responsive",
   () => (
     <div>

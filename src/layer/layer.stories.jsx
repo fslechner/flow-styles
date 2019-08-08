@@ -39,7 +39,7 @@ storiesOf("Layer (la)", module).add(
       <div className="la-toplevel le-box10">
         <b>la-toplevel</b>&nbsp;(z-index: 900)
       </div>
-      <div className="la-toast le-sm-header le-box11">
+      <div className="la-toast le-box11">
         <b>la-toast</b>&nbsp;(z-index: 1000)
       </div>
     </div>

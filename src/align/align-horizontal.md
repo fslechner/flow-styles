@@ -99,10 +99,10 @@ Every \$media-queries entry is possible to use. Predefined breakpoints are xsl, 
 
 ## Responsive Examples
 
-### Align horizontal center between breakpoint sm and md: **sm:al-v-c**
+### Align horizontal center between breakpoint sm and md: **sm:al-h-c**
 
 ```html
-<div class="sm:al-v-c">Item</div>
+<div class="sm:al-h-c">Item</div>
 ```
 
 ### Align horizontal center lower and right upper breakpoint sm: **sml:al-h-c smu:al-h-r**
