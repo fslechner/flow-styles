@@ -2,6 +2,7 @@ import React from "react";
 import { storiesOf } from "@storybook/react";
 import headingStyle from "./heading-style.md";
 import headingSize from "./heading-size.md";
+import headingResponsive from "./heading-responsive.md";
 
 storiesOf("Heading (he)", module).add(
   "Heading Styles",
