@@ -90,20 +90,20 @@ storiesOf("Grid (gr)", module).add(
 storiesOf("Grid (gr)", module).add("Grid Layout Horizontal (gr-h)", () => (
   <div>
     <b>gr-h-one</b> (70px 70px auto)
-    <div className="gr-h-one">
+    <div className="gr-h-one gr-gh-2">
       <div className="ba-silver">Item 1</div>
       <div className="ba-petrol">Item 2</div>
       <div className="ba-petrol20">Item 3</div>
     </div>
     <br />
     <b>gr-h-two</b> (auto 30%)
-    <div className="gr-h-two">
+    <div className="gr-h-two gr-gh-2">
       <div className="ba-silver">Item 1</div>
       <div className="ba-petrol">Item 2</div>
     </div>
     <br />
     <b>gr-h-three</b> (20% auto 20%)
-    <div className="gr-h-three">
+    <div className="gr-h-three gr-gh-2">
       <div className="ba-silver">Item 1</div>
       <div className="ba-petrol">Item 2</div>
       <div className="ba-petrol20">Item 3</div>
@@ -114,14 +114,14 @@ storiesOf("Grid (gr)", module).add("Grid Layout Horizontal (gr-h)", () => (
 storiesOf("Grid (gr)", module).add("Grid Layout Vertical (gr-v-one)", () => (
   <div>
     <b>gr-v-one</b> (70px 70px auto)
-    <div className="gr-v-one">
+    <div className="gr-v-one gr-gv-2">
       <div className="ba-silver">Item 1</div>
       <div className="ba-petrol">Item 2</div>
       <div className="ba-petrol20">Item 3</div>
     </div>
     <br />
     <b>gr-v-four</b> (100px auto 50vh)
-    <div className="gr-v-four">
+    <div className="gr-v-four gr-gv-2">
       <div className="ba-silver">Item 1</div>
       <div className="ba-petrol">Item 2</div>
       <div className="ba-petrol20">Item 3</div>
@@ -134,7 +134,7 @@ storiesOf("Grid (gr)", module).add(
   () => (
     <div>
       <b>gr-h-one gr-v-four</b> (h: 70px 70px auto) (v: 100px auto 50vh)
-      <div className="gr-h-one gr-v-four">
+      <div className="gr-h-one gr-v-four gr-g-2">
         <div className="gri-h1 gri-v1 ba-silver">Item 1</div>
         <div className="gri-h2 gri-v1 ba-petrol">Item 2</div>
         <div className="gri-h3 gri-v1 ba-petrol20">Item 3</div>
