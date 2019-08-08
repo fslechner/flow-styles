@@ -8,9 +8,9 @@ Every \$media-queries entry is possible to use. Predefined breakpoints are xsl, 
 
 ## Examples
 
-### Griditem Lower Breakpoint XS: **ce-3--xsl**
+### Griditem Lower Breakpoint XS: **xsl:gri-3**
 
-Lower breakpoint xs border griditem is at position 3x3. Upper breakpoint xs cell position is inherit.
+Lower breakpoint xs border griditem is at position 3x3. Upper breakpoint xs grititem position is inherit.
 
 ```html
 <div class="xsl:gri-3">Item</div>
@@ -24,7 +24,7 @@ Between breakpoints xs and sm griditem is at position 3x3. Outside breakpoints x
 <div class="xs:gri-3">Item</div>
 ```
 
-### Border One Upper Breakpoint XS: **xsU:gri-3**
+### Border One Upper Breakpoint XS: **xsu:gri-3**
 
 Upper breakpoint xs griditem is at position 3x3. Lower breakpoint xs griditem position is inherit.
 

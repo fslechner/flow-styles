@@ -3,8 +3,8 @@ import { storiesOf } from "@storybook/react";
 import griditemPosition from "./griditem-position.md";
 import griditemResponsive from "./griditem-responsive.md";
 
-storiesOf("griditem", module).add(
-  "griditem Position",
+storiesOf("Griditem (gri)", module).add(
+  "Griditem Position",
   () => (
     <div>
       <h1>3 x 3 Grid and same value for each axis</h1>
@@ -34,7 +34,7 @@ storiesOf("griditem", module).add(
           <b>gri-v-3 gri-h-2</b>
         </div>
         <div className="gri-v-1 gri-h-3 ba-petrol al-c">
-          <b>gri-v-1 ce-h-3</b>
+          <b>gri-v-1 gri-h-3</b>
         </div>
         <div />
         <div />
@@ -61,7 +61,7 @@ storiesOf("griditem", module).add(
           <b>gri-v</b>
         </div>
         <div className="gri-v gri-h-3 ba-petrol al-c">
-          <b>gri-v ce-h-3</b>
+          <b>gri-v gri-h-3</b>
         </div>
         <div />
         <div />
@@ -92,8 +92,8 @@ storiesOf("griditem", module).add(
   }
 );
 
-storiesOf("griditem", module).add(
-  "griditem Responsive",
+storiesOf("Griditem (gri)", module).add(
+  "Griditem Responsive",
   () => (
     <div>
       <div className="ce-layout">

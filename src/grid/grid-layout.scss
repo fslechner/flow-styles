@@ -1,0 +1,29 @@
+//////////////////////////////////////////////////////////
+// Grid Layout
+//////////////////////////////////////////////////////////
+
+// generate grid-layout classes
+@each $direction-name, $direction-value in $grid-directions {
+  @each $grid-layout-name, $grid-layout-value in $grid-layout-types {
+    .#{$prefix}#{$grid}-#{$direction-name}-#{$grid-layout-name} {
+      display: grid;
+      #{$direction-value}: $grid-layout-value;
+    }
+  }
+}
+
+// generate grid-layout classes with media queries
+@each $mq in $media-queries {
+  @each $mq-name, $mq-value in $mq {
+    @each $direction-name, $direction-value in $grid-directions {
+      @each $grid-layout-name, $grid-layout-value in $grid-layout-types {
+        .#{$mq-name}\:#{$prefix}#{$grid}-#{$direction-name}-#{$grid-layout-name} {
+          @media #{$mq-value} {
+            display: grid;
+            #{$direction-value}: $grid-layout-value;
+          }
+        }
+      }
+    }
+  }
+}

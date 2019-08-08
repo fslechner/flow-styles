@@ -1,0 +1,1 @@
+Grid-Layout is same like Grid-Dimension based on CSS-Grid. In contrast to grid-dimensions, with grid-layout you can define individual grids whereas with grid-dimensions you can only define numbers of 1fr-Grid-Cells.

@@ -2,15 +2,6 @@
 // Grid Dimensions
 //////////////////////////////////////////////////////////
 
-$grid-directions: (
-  "h": "grid-template-columns",
-  "v": "grid-template-rows"
-);
-
-.#{$prefix}#{$grid} {
-  display: grid;
-}
-
 // generate grid classes (one value for both directions)
 @each $grid-value in $grids {
   .#{$prefix}#{$grid}-#{$grid-value} {

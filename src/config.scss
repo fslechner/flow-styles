@@ -251,7 +251,7 @@ $layers: (
 $degrees: 90, 180, 270 !default;
 
 //////////////////////////////////////////////////////////
-// Spacing (Values used in Spacing, Grid-Gutters and Layout-Gutters)
+// Spacing (Values used in Spacing, Grid-Gutters)
 //////////////////////////////////////////////////////////
 
 $base-spacing: 0.4rem !default;
@@ -315,49 +315,3 @@ $text-sizes: (
     line-height: 1.7 * 1.2rem
   )
 ) !default;
-
-//////////////////////////////////////////////////////////
-// Export to JavaScript/TypeScript
-//////////////////////////////////////////////////////////
-/* 
-:export {
-  prefix: $prefix;
-  alignment: $alignment;
-  background: $background;
-  border: $border;
-  color: $color;
-  custom: $custom;
-  flex: $flex;
-  grid: $grid;
-  heading: $heading;
-  layout: $layout;
-  level: $level;
-  rotation: $rotation;
-  spacing: $spacing;
-  text: $text;
-  visibility: $visibility;
-  sizeXS: $size-xs;
-  sizeSM: $size-sm;
-  sizeMD: $size-md;
-  sizeLG: $size-lg;
-  sizeXL: $size-xl;
-  sizeXXL: $size-xxl;
-  mediaQueriesBetween: $media-queries-between;
-  mediaQueriesLower: $media-queries-lower;
-  mediaQueriesUpper: $media-queries-upper;
-  mediaQueries: $media-queries;
-  borderStyles: $border-styles;
-  customStyles: $custom-styles;
-  brandColors: $brand-colors;
-  grids: $grids;
-  headingStyles: $heading-styles;
-  headingSizes: $heading-sizes;
-  layout-types: $layout-types;
-  levels: $levels;
-  degrees: $degrees;
-  baseSpacing: $base-spacing;
-  sizeMultipliers: $size-multipliers;
-  textStyles: $text-styles;
-  textSizes: $text-sizes;
-}
- */

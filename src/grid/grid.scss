@@ -11,6 +11,7 @@ $grid-directions: (
   display: grid;
 }
 
-@import "grid-autoflow";
 @import "grid-dimensions";
+@import "grid-layout";
+@import "grid-autoflow";
 @import "grid-gutters";

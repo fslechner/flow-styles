@@ -30,24 +30,24 @@ When using FlowStyles-Classes you don’t have to care about CSS code quality. F
 2. Use FlowStyles classes in your HTML, Lit-HTML or JSX and combine it with usual Sass where necessary.
 3. Use PurgeCSS to remove unused CSS-Classes. Don’t use FlowStyles without removing unused CSS-Classes. Otherwise you will get a huge CSS-File full of unused CSS classes!!!
 
-# Available Scripts
+## Available Scripts
 
 In the project directory, you can run:
 
-## `npm run storybook` or `yarn storybook`
+### `npm run storybook` or `yarn storybook`
 
 Runs the FlowStyles-Storybook in the development mode.<br>
 Open [http://localhost:6006](http://localhost:6006) to view it in the browser.
 
-## `npm run storybook:build` or `yarn storybook:build`
+### `npm run storybook:build` or `yarn storybook:build`
 
 Builds the FlowStyles-Storybook in the storybook-static folder.
 
-## `npm run storybook:serve` or `yarn storybook:serve`
+### `npm run storybook:serve` or `yarn storybook:serve`
 
 Runs the FlowStyles-Storybook build<br>
 Open [http://localhost:5000](http://localhost:5000) to view it in the browser.
 
-## `npm run storybook:build:serve` or `yarn storybook:build:serve`
+### `npm run storybook:build:serve` or `yarn storybook:build:serve`
 
 Build the FlowStyles-Storybook and runs it on [http://localhost:5000](http://localhost:5000).
