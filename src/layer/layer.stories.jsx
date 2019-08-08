@@ -2,14 +2,14 @@ import React from "react";
 import { storiesOf } from "@storybook/react";
 import layer from "./layer.md";
 
-storiesOf("Layer", module).add(
+storiesOf("Layer (la)", module).add(
   "Layer Name",
   () => (
     <div className="sp-m-8">
       <div className="la-base le-box0">
         <b>la-base</b>&nbsp;(z-index: 0)
       </div>
-      <div className="la-hiddem le-box1">
+      <div className="la-hidden le-box1">
         <b>la-hidden</b>&nbsp;(z-index: -100)
       </div>
       <div className="la-footer le-box2">
@@ -49,7 +49,7 @@ storiesOf("Layer", module).add(
   }
 );
 
-storiesOf("Layer", module).add(
+storiesOf("Layer (la)", module).add(
   "Layer Responsive",
   () => (
     <div className="sp-m-8">

@@ -2,7 +2,7 @@ import React from "react";
 import { storiesOf } from "@storybook/react";
 import rotation from "./rotation.md";
 
-storiesOf("Rotation", module).add(
+storiesOf("Rotation (ro)", module).add(
   "Rotation Degrees",
   () => (
     <div>
@@ -17,7 +17,7 @@ storiesOf("Rotation", module).add(
   }
 );
 
-storiesOf("Rotation", module).add(
+storiesOf("Rotation (ro)", module).add(
   "Rotation Responsive",
   () => (
     <div>

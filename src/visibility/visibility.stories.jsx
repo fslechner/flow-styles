@@ -2,7 +2,7 @@ import React from "react";
 import { storiesOf } from "@storybook/react";
 import visibility from "./visibility.md";
 
-storiesOf("Visibility", module).add(
+storiesOf("Visibility (vi)", module).add(
   "Visibility State",
   () => (
     <div>
@@ -18,7 +18,7 @@ storiesOf("Visibility", module).add(
   }
 );
 
-storiesOf("Visibility", module).add(
+storiesOf("Visibility (vi)", module).add(
   "Visibility Responsive",
   () => (
     <div>

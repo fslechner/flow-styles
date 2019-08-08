@@ -5,7 +5,7 @@ import textSize from "./text-size.md";
 import textDecoration from "./text-decoration.md";
 import textResponsive from "./text-responsive.md";
 
-storiesOf("Text", module).add(
+storiesOf("Text (te)", module).add(
   "Text Style",
   () => (
     <div>
@@ -28,7 +28,7 @@ storiesOf("Text", module).add(
   }
 );
 
-storiesOf("Text", module).add(
+storiesOf("Text (te)", module).add(
   "Text Size",
   () => (
     <div>
@@ -45,7 +45,7 @@ storiesOf("Text", module).add(
   }
 );
 
-storiesOf("Text", module).add(
+storiesOf("Text (te)", module).add(
   "Text Decoration",
   () => (
     <div>
@@ -68,7 +68,7 @@ storiesOf("Text", module).add(
   }
 );
 
-storiesOf("Text", module).add(
+storiesOf("Text (te)", module).add(
   "Text Responsive",
   () => (
     <div>

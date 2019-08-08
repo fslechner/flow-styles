@@ -3,7 +3,7 @@ import { storiesOf } from "@storybook/react";
 import spacingDirection from "./spacing-direction.md";
 import spacingResponsive from "./spacing-responsive.md";
 
-storiesOf("Spacing", module).add(
+storiesOf("Spacing (sp)", module).add(
   "Spacing All Directions",
   () => (
     <div>
@@ -68,7 +68,7 @@ storiesOf("Spacing", module).add(
   }
 );
 
-storiesOf("Spacing", module).add(
+storiesOf("Spacing (sp)", module).add(
   "Spacing Horizontal Directions",
   () => (
     <div>
@@ -146,7 +146,7 @@ storiesOf("Spacing", module).add(
   }
 );
 
-storiesOf("Spacing", module).add(
+storiesOf("Spacing (sp)", module).add(
   "Spacing Vertical Directions",
   () => (
     <div>
@@ -223,7 +223,7 @@ storiesOf("Spacing", module).add(
   }
 );
 
-storiesOf("Spacing", module).add(
+storiesOf("Spacing (sp)", module).add(
   "Spacing Top Directions",
   () => (
     <div>
@@ -300,7 +300,7 @@ storiesOf("Spacing", module).add(
   }
 );
 
-storiesOf("Spacing", module).add(
+storiesOf("Spacing (sp)", module).add(
   "Spacing Left Direction",
   () => (
     <div>
@@ -377,7 +377,7 @@ storiesOf("Spacing", module).add(
   }
 );
 
-storiesOf("Spacing", module).add(
+storiesOf("Spacing (sp)", module).add(
   "Spacing Bottom Direction",
   () => (
     <div>
@@ -454,7 +454,7 @@ storiesOf("Spacing", module).add(
   }
 );
 
-storiesOf("Spacing", module).add(
+storiesOf("Spacing (sp)", module).add(
   "Spacing Right Direction",
   () => (
     <div>
@@ -531,7 +531,7 @@ storiesOf("Spacing", module).add(
   }
 );
 
-storiesOf("Spacing", module).add(
+storiesOf("Spacing (sp)", module).add(
   "Spacing Responsive",
   () => (
     <div>
