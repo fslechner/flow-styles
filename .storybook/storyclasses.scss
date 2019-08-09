@@ -32,81 +32,81 @@ body {
 .la-box0 {
   background-color: black;
   color: white;
-  @include le-box;
+  @include la-box;
   margin-top: -40px;
   margin-left: 200px;
 }
 
 .la-box1 {
   background-color: silver;
-  @include le-box;
+  @include la-box;
   margin-top: -20px;
   margin-left: 20px;
 }
 
 .la-box1 {
   background-color: grey;
-  @include le-box;
+  @include la-box;
   margin-top: -20px;
   margin-left: 20px;
 }
 .la-box2 {
   background-color: yellow;
-  @include le-box;
+  @include la-box;
   margin-top: -20px;
   margin-left: 40px;
 }
 .la-box3 {
   background-color: orange;
-  @include le-box;
+  @include la-box;
   margin-top: -20px;
   margin-left: 60px;
 }
-.le-box4 {
+.la-box4 {
   background-color: red;
-  @include le-box;
+  @include la-box;
   margin-top: -20px;
   margin-left: 80px;
 }
 .la-box5 {
   background-color: green;
-  @include le-box;
+  @include la-box;
   margin-top: -20px;
   margin-left: 100px;
 }
 .la-box6 {
   background-color: purple;
-  @include le-box;
+  @include la-box;
   margin-top: -20px;
   margin-left: 120px;
 }
 .la-box7 {
   background-color: snow;
-  @include le-box;
+  @include la-box;
   margin-top: -20px;
   margin-left: 140px;
 }
 .la-box8 {
   background-color: sandybrown;
-  @include le-box;
+  @include la-box;
   margin-top: -20px;
   margin-left: 160px;
 }
 .la-box9 {
   background-color: olive;
-  @include le-box;
+  @include la-box;
   margin-top: -20px;
   margin-left: 180px;
 }
 .la-box10 {
   background-color: aqua;
-  @include le-box;
+  @include la-box;
   margin-top: -20px;
   margin-left: 200px;
 }
 .la-box11 {
   background-color: teal;
-  @include le-box;
+  @include la-box;
   margin-top: -20px;
   margin-left: 220px;
 }

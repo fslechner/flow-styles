@@ -2,7 +2,6 @@ import React from "react";
 import { storiesOf } from "@storybook/react";
 import headingStyle from "./heading-style.md";
 import headingSize from "./heading-size.md";
-import headingResponsive from "./heading-responsive.md";
 
 storiesOf("Heading (he)", module).add(
   "Heading Styles",
@@ -44,16 +43,10 @@ storiesOf("Heading (he)", module).add(
   }
 );
 
-storiesOf("Heading (he)", module).add(
-  "Heading Responsive",
-  () => (
-    <div>
-      <div className="sml:he-h6-p sm:he-h4-p md:he-h3-p lg:he-h2-p lgu:he-h1-p">
-        Heading by Viewport
-      </div>
+storiesOf("Heading (he)", module).add("Heading Responsive", () => (
+  <div>
+    <div className="sml:he-h6-p sm:he-h4-p md:he-h3-p lg:he-h2-p lgu:he-h1-p">
+      Heading by Viewport
     </div>
-  ),
-  {
-    notes: { markdown: headingResponsive }
-  }
-);
+  </div>
+));
