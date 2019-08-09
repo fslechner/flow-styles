@@ -1,24 +1,24 @@
 @import "../src/index";
 
 body {
-  font-family: arial;
+  font-family: arial, sans-serif;
 }
 
 .al-h-box {
   padding: 1rem;
-  background: lightgrey;
+  background: #d3d3d3;
 }
 
 .al-v-box {
   padding: 1rem;
-  background: lightgrey;
+  background: #d3d3d3;
   height: 100px;
 }
 
 .ro-box {
   width: 100px;
   height: 50px;
-  background: green;
+  background: #008000;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -30,86 +30,90 @@ body {
 }
 
 .la-box0 {
-  background-color: black;
-  color: white;
-  @include la-box;
+  background-color: #000;
+  color: #fff;
   margin-top: -40px;
   margin-left: 200px;
+  @include la-box();
 }
 
 .la-box1 {
-  background-color: silver;
-  @include la-box;
+  background-color: #c0c0c0;
   margin-top: -20px;
   margin-left: 20px;
+  @include la-box();
 }
 
-.la-box1 {
-  background-color: grey;
-  @include la-box;
-  margin-top: -20px;
-  margin-left: 20px;
-}
 .la-box2 {
-  background-color: yellow;
-  @include la-box;
+  background-color: #ff0;
   margin-top: -20px;
   margin-left: 40px;
+  @include la-box();
 }
+
 .la-box3 {
-  background-color: orange;
-  @include la-box;
+  background-color: #ffa500;
   margin-top: -20px;
   margin-left: 60px;
+  @include la-box();
 }
+
 .la-box4 {
-  background-color: red;
-  @include la-box;
+  background-color: #f00;
   margin-top: -20px;
   margin-left: 80px;
+  @include la-box();
 }
+
 .la-box5 {
-  background-color: green;
-  @include la-box;
+  background-color: #008000;
   margin-top: -20px;
   margin-left: 100px;
+  @include la-box();
 }
+
 .la-box6 {
-  background-color: purple;
-  @include la-box;
+  background-color: #800080;
   margin-top: -20px;
   margin-left: 120px;
+  @include la-box();
 }
+
 .la-box7 {
-  background-color: snow;
-  @include la-box;
+  background-color: #fffafa;
   margin-top: -20px;
   margin-left: 140px;
+  @include la-box();
 }
+
 .la-box8 {
-  background-color: sandybrown;
-  @include la-box;
+  background-color: #f4a460;
   margin-top: -20px;
   margin-left: 160px;
+  @include la-box();
 }
+
 .la-box9 {
-  background-color: olive;
-  @include la-box;
+  background-color: #808000;
   margin-top: -20px;
   margin-left: 180px;
+  @include la-box();
 }
+
 .la-box10 {
-  background-color: aqua;
-  @include la-box;
+  background-color: #0ff;
   margin-top: -20px;
   margin-left: 200px;
+  @include la-box();
 }
+
 .la-box11 {
-  background-color: teal;
-  @include la-box;
+  background-color: #008080;
   margin-top: -20px;
   margin-left: 220px;
+  @include la-box();
 }
+
 .sp-inline,
 .sp-inline div {
   display: inline;
@@ -133,5 +137,5 @@ body {
 .al-wrapper {
   width: 300px;
   height: 200px;
-  background: silver;
+  background: #c0c0c0;
 }

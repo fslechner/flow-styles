@@ -6,11 +6,16 @@
   "license": "MIT",
   "main": "src/index.scss",
   "private": false,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fsl0110/flow-styles"
+  },
   "scripts": {
     "storybook": "start-storybook -p 6006",
     "storybook:build": "build-storybook",
     "storybook:serve": "serve ./storybook-static",
-    "storybook:build:serve": "build-storybook && serve ./storybook-static"
+    "storybook:build:serve": "build-storybook && serve ./storybook-static",
+    "lint": "stylelint src/**/*.scss .storybook/**/*.scss"
   },
   "devDependencies": {
     "@babel/core": "^7.4.4",
@@ -29,5 +34,10 @@
     "serve": "^11.1.0",
     "style-loader": "^0.23.1",
     "url-loader": "^1.1.2"
+  },
+  "dependencies": {
+    "stylelint": "^10.1.0",
+    "stylelint-order": "^3.0.1",
+    "stylelint-scss": "^3.9.3"
   }
 }

@@ -21,8 +21,9 @@ $visibility: "vi" !default;
 //////////////////////////////////////////////////////////
 // Media Queries
 //////////////////////////////////////////////////////////
-/* You can adjust breakpoint sizes to your needs. */
-/* You can also add or remove breakpoints. */
+
+// You can adjust breakpoint sizes to your needs.
+// You can also add or remove breakpoints.
 
 // Breakpoints
 $size-xs: 480px !default;
@@ -59,34 +60,35 @@ $media-queries-upper: (
   "xxlu": "screen and (min-width: #{$size-xxl})"
 ) !default;
 
-$media-queries: (
-  $media-queries-between,
-  $media-queries-lower,
-  $media-queries-upper
-) !default;
+$media-queries: ($media-queries-between, $media-queries-lower, $media-queries-upper) !default;
 
 //////////////////////////////////////////////////////////
 // Alignitem Grow
 //////////////////////////////////////////////////////////
-/* You can increase or decrease the amount of numbers. */
+
+// You can increase or decrease the amount of numbers.
 $grow-numbers: 0, 1, 2, 3, 4 !default;
 
 //////////////////////////////////////////////////////////
 // Alignitem Shrink
 //////////////////////////////////////////////////////////
-/* You can increase or decrease the amount of numbers. */
+
+// You can increase or decrease the amount of numbers.
 $shrink-numbers: 0, 1, 2, 3, 4 !default;
 
 //////////////////////////////////////////////////////////
 // Alignitem Order
 //////////////////////////////////////////////////////////
-/* You can increase or decrease the amount of numbers. */
+
+// You can increase or decrease the amount of numbers.
 $order-numbers: -4, -3, -2, -1, 0, 1, 2, 3, 4 !default;
 
 //////////////////////////////////////////////////////////
 // Border
 //////////////////////////////////////////////////////////
-/* You can use individual names instead of p, s, t, q if you want. */
+
+// You can use individual names instead of p, s, t, q if you want.
+// This are only simple examples
 $border-styles: (
   p: (
     border-bottom: 1px solid rgb(214, 31, 31)
@@ -105,7 +107,9 @@ $border-styles: (
 //////////////////////////////////////////////////////////
 // Brand Colors (Values used in Background and Color)
 //////////////////////////////////////////////////////////
-/* Define your own colors depending to your project styleguide. */
+
+// Define your own colors depending to your project styleguide.
+// This are only examples.
 $brand-colors: (
   dark: #0e1330,
   blue: #182257,
@@ -118,35 +122,16 @@ $brand-colors: (
 //////////////////////////////////////////////////////////
 // Grids
 //////////////////////////////////////////////////////////
-/* You can increase or decrease the amount of numbers. */
-$grids: (
-  1,
-  2,
-  3,
-  4,
-  5,
-  6,
-  7,
-  8,
-  9,
-  10,
-  11,
-  12,
-  13,
-  14,
-  15,
-  16,
-  17,
-  18,
-  19,
-  20
-) !default;
+
+// You can increase or decrease the amount of numbers.
+$grids: (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20) !default;
 
 //////////////////////////////////////////////////////////
 // Grid Layouts
 //////////////////////////////////////////////////////////
-/* You can define your own grid-layout names */
-/* This are only examples */
+
+// You can define your own grid-layout names.
+// This are only examples
 $grid-layout-types: (
   one: 70px 70px auto,
   two: auto 30%,
@@ -158,6 +143,8 @@ $grid-layout-types: (
 // Heading
 //////////////////////////////////////////////////////////
 
+// Style your headings depending to your needs.
+// This are only simple examples.
 $heading-styles: (
   p: (
     font-family: arial
@@ -173,6 +160,8 @@ $heading-styles: (
   )
 ) !default;
 
+// Set Heading-Sizes depending to your needs.
+// This are only simple examples.
 $heading-sizes: (
   h6: (
     font-size: 1.5rem,
@@ -203,7 +192,9 @@ $heading-sizes: (
 //////////////////////////////////////////////////////////
 // Layer
 //////////////////////////////////////////////////////////
-/* You can define your own layer names */
+
+// You can define your own layer names.
+// toast has highest z-index, hidden has lowest z-index.
 $layers: (
   "toast",
   "toplevel",
@@ -228,7 +219,8 @@ $degrees: 90, 180, 270 !default;
 //////////////////////////////////////////////////////////
 // Spacing (Values used in Spacing, Grid-Gutters)
 //////////////////////////////////////////////////////////
-/* You can define your own spacings sizes. */
+
+// You can define your own spacings sizes.
 $base-spacing: 0.4rem !default;
 $size-multipliers: (
   0: 0,
@@ -249,6 +241,8 @@ $size-multipliers: (
 // Text
 //////////////////////////////////////////////////////////
 
+// Style your texts depending to your needs.
+// This are only simple examples.
 $text-styles: (
   p: (
     font-family: arial
@@ -264,6 +258,8 @@ $text-styles: (
   )
 ) !default;
 
+// Set Text-Sizes depending to your needs.
+// This are only simple examples.
 $text-sizes: (
   xs: (
     font-size: 0.7rem,
