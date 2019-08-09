@@ -9,7 +9,6 @@ $alignitem: "ali" !default;
 $background: "ba" !default;
 $border: "bo" !default;
 $color: "co" !default;
-$custom: "cu" !default;
 $grid: "gr" !default;
 $griditem: "gri" !default;
 $heading: "he" !default;
@@ -100,37 +99,6 @@ $border-styles: (
   ),
   q: (
     border: 3px rgb(91, 114, 201)
-  )
-) !default;
-
-//////////////////////////////////////////////////////////
-// Custom
-//////////////////////////////////////////////////////////
-/* Custom FlowStyles are an experimental feature. I'm not sure how usefull they are! */
-/* This are only examples. */
-$custom-styles: (
-  circle: (
-    width: 100px,
-    height: 100px,
-    background: red,
-    border-radius: 50%
-  ),
-  trapezoid: (
-    border-bottom: 100px solid red,
-    border-left: 25px solid transparent,
-    border-right: 25px solid transparent,
-    height: 0,
-    width: 100px
-  ),
-  triangle: (
-    width: 0,
-    height: 0,
-    border-left: 50px solid transparent,
-    border-right: 50px solid transparent,
-    border-bottom: 100px solid red
-  ),
-  300px: (
-    width: 300px
   )
 ) !default;
 
