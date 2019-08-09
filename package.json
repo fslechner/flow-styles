@@ -30,14 +30,14 @@
     "node-sass": "^4.12.0",
     "postcss-flexbugs-fixes": "^4.1.0",
     "postcss-loader": "^3.0.0",
+    "prettier": "^1.18.2",
     "sass-loader": "^7.1.0",
     "serve": "^11.1.0",
     "style-loader": "^0.23.1",
-    "url-loader": "^1.1.2"
-  },
-  "dependencies": {
     "stylelint": "^10.1.0",
     "stylelint-order": "^3.0.1",
-    "stylelint-scss": "^3.9.3"
+    "stylelint-prettier": "^1.1.1",
+    "stylelint-scss": "^3.9.3",
+    "url-loader": "^1.1.2"
   }
 }
