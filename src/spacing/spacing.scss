@@ -41,7 +41,7 @@ $spacing-axis-directions: "v", "h";
 }
 
 // generate spacing-edge-directions classes
-// individual edges individual values e.g. padding-top: 8rem; padding-left: 4rem;
+// individual edges individual values e.g. padding-top: 8rem or padding-left: 4rem;
 @each $spacing-name, $spacing-value in $spacing-types {
   @each $direction-name, $direction-value in $spacing-edge-directions {
     @each $size-name, $size-value in $size-multipliers {
@@ -53,7 +53,7 @@ $spacing-axis-directions: "v", "h";
 }
 
 // generate spacing-edge-directions classes with media queries
-// individual edges individual values e.g. padding-top: 8rem; padding-left: 4rem;
+// individual edges individual values e.g. padding-top: 8rem or padding-left: 4rem;
 @each $mq in $media-queries {
   @each $mq-name, $mq-value in $mq {
     @each $spacing-name, $spacing-value in $spacing-types {
@@ -71,7 +71,7 @@ $spacing-axis-directions: "v", "h";
 }
 
 // generate spacing-axis-directions classes
-// horizontal or vertical axis e.g. padding: 8rem 4rem; or margin: 2rem inerhit;
+// horizontal or vertical axis e.g. padding: 8rem 4rem; or margin: 2rem inherit;
 @each $spacing-name, $spacing-value in $spacing-types {
   @each $direction-name, $direction-value in $spacing-axis-directions {
     @each $size-name, $size-value in $size-multipliers {
@@ -92,7 +92,7 @@ $spacing-axis-directions: "v", "h";
 }
 
 // generate spacing-axis-directions classes with media queries
-// horizontal or vertical axis e.g. padding: inerhit 4rem; or margin: 2rem inerhit;
+// horizontal or vertical axis e.g. padding: inherit 4rem; or margin: 2rem inherit;
 @each $mq in $media-queries {
   @each $mq-name, $mq-value in $mq {
     @each $spacing-name, $spacing-value in $spacing-types {

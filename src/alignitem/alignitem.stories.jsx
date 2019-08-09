@@ -53,9 +53,9 @@ storiesOf("Alignitem (ali)", module).add(
   () => (
     <div>
       <div className="al">
-        <div className="cu-300px ali-s-0 sp-p2 ba-petrol">ali-s-0: Item 1</div>
-        <div className="cu-300px ali-s-2 sp-p2 ba-silver">ali-s-2: Item 2</div>
-        <div className="cu-300px sp-p2 ba-petrol20">default: Item 3</div>
+        <div className="cu-300px ali-s-0 sp-p-2 ba-petrol">ali-s-0: Item 1</div>
+        <div className="cu-300px ali-s-2 sp-p-2 ba-silver">ali-s-2: Item 2</div>
+        <div className="cu-300px sp-p-2 ba-petrol20">default: Item 3</div>
       </div>
     </div>
   ),
@@ -69,9 +69,9 @@ storiesOf("Alignitem (ali)", module).add(
   () => (
     <div>
       <div className="al-dh">
-        <div className="ali-o-2 sp-p2 ba-petrol">ali-o-2: Item 1</div>
-        <div className="ali-o-3 sp-p2 ba-silver">ali-o-3: Item 2</div>
-        <div className="ali-o-1 sp-p2 ba-petrol20">ali-o-1: Item 3</div>
+        <div className="ali-o-2 sp-p-2 ba-petrol">ali-o-2: Item 1</div>
+        <div className="ali-o-3 sp-p-2 ba-silver">ali-o-3: Item 2</div>
+        <div className="ali-o-1 sp-p-2 ba-petrol20">ali-o-1: Item 3</div>
       </div>
     </div>
   ),
