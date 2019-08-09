@@ -8,7 +8,7 @@ storiesOf("Griditem (gri)", module).add(
   () => (
     <div>
       <h1>3 x 3 Grid and same value for each axis</h1>
-      <div className="ce-layout">
+      <div className="gri-layout">
         <div className="gri-1 ba-petrol al-c">
           <b>gri-1</b>
         </div>
@@ -26,7 +26,7 @@ storiesOf("Griditem (gri)", module).add(
         <div />
       </div>
       <h1>3 x 3 Grid and different value for each axis</h1>
-      <div className="ce-layout">
+      <div className="gri-layout">
         <div className="gri-v-2 gri-h-1 ba-petrol al-c">
           <b>gri-v-2 gri-h-1</b>
         </div>
@@ -44,7 +44,7 @@ storiesOf("Griditem (gri)", module).add(
         <div />
       </div>
       <h1>3 x 3 Grid and all horizontal</h1>
-      <div className="ce-layout">
+      <div className="gri-layout">
         <div className="gri-h ba-petrol al-c">
           <b>gri-h</b>
         </div>
@@ -56,7 +56,7 @@ storiesOf("Griditem (gri)", module).add(
         <div />
       </div>
       <h1>3 x 3 Grid and all vertical</h1>
-      <div className="ce-layout">
+      <div className="gri-layout">
         <div className="gri-v ba-petrol al-c">
           <b>gri-v</b>
         </div>
@@ -68,7 +68,7 @@ storiesOf("Griditem (gri)", module).add(
         <div />
       </div>
       <h1>3 x 3 Grid and inividual positioning</h1>
-      <div className="ce-layout">
+      <div className="gri-layout">
         <div />
         <div className="gri-vs-1 gri-ve-3 gri-hs-2 gri-he-4 ba-petrol al-c">
           <b>
@@ -96,7 +96,7 @@ storiesOf("Griditem (gri)", module).add(
   "Griditem Responsive",
   () => (
     <div>
-      <div className="ce-layout">
+      <div className="gri-layout">
         <div className="xsl:gri-3 xsu:gri-2 lgu:gri-1 ba-petrol al-c">
           <b>
             xsl:gri-3 <br />

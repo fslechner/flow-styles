@@ -6,7 +6,7 @@ Set flex-shrink to a Flexbox-Item.
 
 ### Shrink-Value
 
-Every \$shrink-numbers entry is possible to use. Predefined numbers are 0, 1, 2, 3, 4, 5, 6, 7, 8, 9.
+Every \$shrink-numbers entry is possible to use. Predefined numbers are 0, 1, 2, 3, 4.
 
 ### Media Queries
 
@@ -20,10 +20,10 @@ Every \$media-queries entry is possible to use. Predefined breakpoints are xsl, 
 <div class="ali-s-1">Item</div>
 ```
 
-### Alignitem shrink 6: **ali-s-6**
+### Alignitem shrink :4 **ali-s-4**
 
 ```html
-<div class="ali-s-6">Item</div>
+<div class="ali-s-4">Item</div>
 ```
 
 ## Responsive Examples

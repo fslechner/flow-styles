@@ -119,14 +119,14 @@ body {
   display: inline-block;
 }
 
-.ce-layout {
+.gri-layout {
   display: grid;
   grid-template-rows: 100px 100px 100px;
   grid-template-columns: 200px 200px 200px;
   gap: 0.5em;
 }
 
-.ce-layout > * {
+.gri-layout > * {
   border: 2px solid #00979e;
 }
 

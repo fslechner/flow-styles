@@ -80,7 +80,7 @@ storiesOf("Align (al)", module).add(
   () => (
     <div className="sp-m-4">
       <h3>Align Direction Horizontal: al-d-h</h3>
-      <div className="al-d-h fl-wrapper">
+      <div className="al-d-h al-wrapper">
         <div className="sp-m-2">Item1</div>
         <div className="sp-m-2">Item2</div>
         <div className="sp-m-2">Item3</div>
@@ -89,7 +89,7 @@ storiesOf("Align (al)", module).add(
         <div className="sp-m-2">Item6</div>
       </div>
       <h3>Align Direction Horizontal Reverse: al-d-hr</h3>
-      <div className="al-d-hr fl-wrapper">
+      <div className="al-d-hr al-wrapper">
         <div className="sp-m-2">Item1</div>
         <div className="sp-m-2">Item2</div>
         <div className="sp-m-2">Item3</div>
@@ -98,7 +98,7 @@ storiesOf("Align (al)", module).add(
         <div className="sp-m-2">Item6</div>
       </div>
       <h3>Align Horizontal Wrap: al-d-hw</h3>
-      <div className="al-d-hw fl-wrapper">
+      <div className="al-d-hw al-wrapper">
         <div className="sp-m-2">Item1</div>
         <div className="sp-m-2">Item2</div>
         <div className="sp-m-2">Item3</div>
@@ -107,7 +107,7 @@ storiesOf("Align (al)", module).add(
         <div className="sp-m-2">Item6</div>
       </div>
       <h3>Align Horizontal Wrap Reverse: al-d-hwr</h3>
-      <div className="al-d-hwr fl-wrapper">
+      <div className="al-d-hwr al-wrapper">
         <div className="sp-m-2">Item1</div>
         <div className="sp-m-2">Item2</div>
         <div className="sp-m-2">Item3</div>
@@ -116,7 +116,7 @@ storiesOf("Align (al)", module).add(
         <div className="sp-m-2">Item6</div>
       </div>
       <h3>Align Horizontal Reverse Wrap: al-d-hrw</h3>
-      <div className="al-d-hrw fl-wrapper">
+      <div className="al-d-hrw al-wrapper">
         <div className="sp-m-2">Item1</div>
         <div className="sp-m-2">Item2</div>
         <div className="sp-m-2">Item3</div>
@@ -125,7 +125,7 @@ storiesOf("Align (al)", module).add(
         <div className="sp-m-2">Item6</div>
       </div>
       <h3>Align Horizontal Reverse Wrap Reverse: al-d-hrwr</h3>
-      <div className="al-d-hrwr fl-wrapper">
+      <div className="al-d-hrwr al-wrapper">
         <div className="sp-m-2">Item1</div>
         <div className="sp-m-2">Item2</div>
         <div className="sp-m-2">Item3</div>
@@ -134,7 +134,7 @@ storiesOf("Align (al)", module).add(
         <div className="sp-m-2">Item6</div>
       </div>
       <h3>Align Direction Vertical: al-d-v</h3>
-      <div className="al-d-v fl-wrapper">
+      <div className="al-d-v al-wrapper">
         <div className="sp-m-2">Item1</div>
         <div className="sp-m-2">Item2</div>
         <div className="sp-m-2">Item3</div>
@@ -143,7 +143,7 @@ storiesOf("Align (al)", module).add(
         <div className="sp-m-2">Item6</div>
       </div>
       <h3>Align Direction Vertical Reverse: al-d-vr</h3>
-      <div className="al-d-vr fl-wrapper">
+      <div className="al-d-vr al-wrapper">
         <div className="sp-m-2">Item1</div>
         <div className="sp-m-2">Item2</div>
         <div className="sp-m-2">Item3</div>
@@ -153,7 +153,7 @@ storiesOf("Align (al)", module).add(
       </div>
 
       <h3>Align Vertical Wrap: al-d-vw</h3>
-      <div className="al-d-vw fl-wrapper">
+      <div className="al-d-vw al-wrapper">
         <div className="sp-m-2">Item1</div>
         <div className="sp-m-2">Item2</div>
         <div className="sp-m-2">Item3</div>
@@ -162,7 +162,7 @@ storiesOf("Align (al)", module).add(
         <div className="sp-m-2">Item6</div>
       </div>
       <h3>Align Vertical Wrap Reverse: al-d-vwr</h3>
-      <div className="al-d-vwr fl-wrapper">
+      <div className="al-d-vwr al-wrapper">
         <div className="sp-m-2">Item1</div>
         <div className="sp-m-2">Item2</div>
         <div className="sp-m-2">Item3</div>
@@ -171,7 +171,7 @@ storiesOf("Align (al)", module).add(
         <div className="sp-m-2">Item6</div>
       </div>
       <h3>Align Vertical Reverse Wrap: al-d-vrw</h3>
-      <div className="al-d-vrw fl-wrapper">
+      <div className="al-d-vrw al-wrapper">
         <div className="sp-m-2">Item1</div>
         <div className="sp-m-2">Item2</div>
         <div className="sp-m-2">Item3</div>
@@ -180,7 +180,7 @@ storiesOf("Align (al)", module).add(
         <div className="sp-m-2">Item6</div>
       </div>
       <h3>Align Vertical Reverse Wrap Reverse: al-d-vrwr</h3>
-      <div className="al-d-vrwr fl-wrapper">
+      <div className="al-d-vrwr al-wrapper">
         <div className="sp-m-2">Item1</div>
         <div className="sp-m-2">Item2</div>
         <div className="sp-m-2">Item3</div>
@@ -200,7 +200,7 @@ storiesOf("Align (al)", module).add(
   () => (
     <div>
       <h3>Align Content Top: al-c-t</h3>
-      <div className="al-c-t al-d-hw fl-wrapper">
+      <div className="al-c-t al-d-hw al-wrapper">
         <div className="sp-m-2">Item1</div>
         <div className="sp-m-2">Item2</div>
         <div className="sp-m-2">Item3</div>
@@ -209,7 +209,7 @@ storiesOf("Align (al)", module).add(
         <div className="sp-m-2">Item6</div>
       </div>
       <h3>Align Content Center: al-c-c</h3>
-      <div className="al-c-c al-d-hw fl-wrapper">
+      <div className="al-c-c al-d-hw al-wrapper">
         <div className="sp-m-2">Item1</div>
         <div className="sp-m-2">Item2</div>
         <div className="sp-m-2">Item3</div>
@@ -218,7 +218,7 @@ storiesOf("Align (al)", module).add(
         <div className="sp-m-2">Item6</div>
       </div>
       <h3>Align Content Bottom: al-c-b</h3>
-      <div className="al-c-b al-d-hw fl-wrapper">
+      <div className="al-c-b al-d-hw al-wrapper">
         <div className="sp-m-2">Item1</div>
         <div className="sp-m-2">Item2</div>
         <div className="sp-m-2">Item3</div>
@@ -227,7 +227,7 @@ storiesOf("Align (al)", module).add(
         <div className="sp-m-2">Item6</div>
       </div>
       <h3>Align Content Stretch: al-c-s</h3>
-      <div className="al-c-s al-d-hw fl-wrapper">
+      <div className="al-c-s al-d-hw al-wrapper">
         <div className="sp-m-2">Item1</div>
         <div className="sp-m-2">Item2</div>
         <div className="sp-m-2">Item3</div>
@@ -236,7 +236,7 @@ storiesOf("Align (al)", module).add(
         <div className="sp-m-2">Item6</div>
       </div>
       <h3>Align Content Space-Around: al-c-sa</h3>
-      <div className="al-c-sa al-d-hw fl-wrapper">
+      <div className="al-c-sa al-d-hw al-wrapper">
         <div className="sp-m-2">Item1</div>
         <div className="sp-m-2">Item2</div>
         <div className="sp-m-2">Item3</div>
@@ -245,7 +245,7 @@ storiesOf("Align (al)", module).add(
         <div className="sp-m-2">Item6</div>
       </div>
       <h3>Align Content Space-Between: al-c-sb</h3>
-      <div className="al-c-sb al-d-hw fl-wrapper">
+      <div className="al-c-sb al-d-hw al-wrapper">
         <div className="sp-m-2">Item1</div>
         <div className="sp-m-2">Item2</div>
         <div className="sp-m-2">Item3</div>
@@ -272,7 +272,7 @@ storiesOf("Align (al)", module).add("Align Responsive", () => (
     </div>
     <h3>Direction: sml:al-d-vw smu:al-d-hw</h3>
     <p>Change align direction at breakpoint sm</p>
-    <div className="sml:al-d-vw smu:al-d-hw fl-wrapper">
+    <div className="sml:al-d-vw smu:al-d-hw al-wrapper">
       <div className="sp-m-2">Item1</div>
       <div className="sp-m-2">Item2</div>
       <div className="sp-m-2">Item3</div>
@@ -282,7 +282,7 @@ storiesOf("Align (al)", module).add("Align Responsive", () => (
     </div>
     <h3>Content: sml:al-c-t smu:al-c-b</h3>
     <p>Change align content at breakpoint sm</p>
-    <div className="sml:al-c-t smu:al-c-b al-d-hw fl-wrapper">
+    <div className="sml:al-c-t smu:al-c-b al-d-hw al-wrapper">
       <div className="sp-m-2">Item1</div>
       <div className="sp-m-2">Item2</div>
       <div className="sp-m-2">Item3</div>

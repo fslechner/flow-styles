@@ -10,7 +10,7 @@ storiesOf("Alignitem (ali)", module).add(
   () => (
     <div>
       <h3>Align Item 3 bottom: ali-as-b</h3>
-      <div className="al fl-wrapper">
+      <div className="al al-wrapper">
         <div className="sp-m2">Item1</div>
         <div className="sp-m2">Item2</div>
         <div className="sp-m2 ali-as-b">Item3</div>
@@ -19,7 +19,7 @@ storiesOf("Alignitem (ali)", module).add(
         <div className="sp-m2">Item6</div>
       </div>
       <h3>Align Item 5 center: ali-as-c</h3>
-      <div className="al-d-hw fl-wrapper">
+      <div className="al-d-hw al-wrapper">
         <div className="sp-m2">Item1</div>
         <div className="sp-m2">Item2</div>
         <div className="sp-m2 ">Item3</div>

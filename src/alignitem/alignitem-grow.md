@@ -6,7 +6,7 @@ Set flex-grow to a Flexbox-Item.
 
 ### Grow-Value
 
-Every \$grow-numbers entry is possible to use. Predefined numbers are 0, 1, 2, 3, 4, 5, 6, 7, 8, 9.
+Every \$grow-numbers entry is possible to use. Predefined numbers are 0, 1, 2, 3, 4.
 
 ### Media Queries
 
@@ -20,10 +20,10 @@ Every \$media-queries entry is possible to use. Predefined breakpoints are xsl, 
 <div class="ali-g-1">Item</div>
 ```
 
-### Alignitem grow 6: **ali-g-6**
+### Alignitem grow 4: **ali-g-4**
 
 ```html
-<div class="ali-g-6">Item</div>
+<div class="ali-g-4">Item</div>
 ```
 
 ## Responsive Examples
