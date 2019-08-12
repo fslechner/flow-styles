@@ -54,12 +54,4 @@ Build the FlowStyles-Storybook and runs it on [http://localhost:5000](http://loc
 
 ### `npm run lint` or `yarn lint`
 
-Execute TSLint with Sonar and Stylelint
-
-### `npm run lint:scripts` or `yarn lint:scripts`
-
-Execute TSLint with Sonar
-
-### `npm run lint:styles` or `yarn lint:styles`
-
 Execute Stylelint
