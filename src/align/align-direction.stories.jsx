@@ -6,7 +6,7 @@ storiesOf("Align (al)", module).add(
   "Align Direction (al-d)",
   () => (
     <div className="sp-m-4">
-      <h3>Align Direction Horizontal: al-d-h</h3>
+      <h3>Align Direction Horizontal: al-d-h (Shortcut: al)</h3>
       <div className="al-d-h al-wrapper">
         <div className="sp-m-2">Item1</div>
         <div className="sp-m-2">Item2</div>
