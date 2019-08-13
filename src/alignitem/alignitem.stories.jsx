@@ -9,23 +9,40 @@ storiesOf("Alignitem (ali)", module).add(
   "Alignitem Align Self (ali-as)",
   () => (
     <div>
-      <h3>Align Item 3 bottom: ali-as-b</h3>
-      <div className="al al-wrapper">
-        <div className="sp-m2">Item1</div>
-        <div className="sp-m2">Item2</div>
-        <div className="sp-m2 ali-as-b">Item3</div>
-        <div className="sp-m2">Item4</div>
-        <div className="sp-m2">Item5</div>
-        <div className="sp-m2">Item6</div>
+      <h3>Align Item 2 top: ali-as-t</h3>
+      <div className="al-c-b al-wrapper">
+        <div className="sp-m-2">Item1</div>
+        <div className="sp-m-2 ali-as-t ba-petrol">Item2</div>
+        <div className="sp-m-2">Item3</div>
+        <div className="sp-m-2">Item4</div>
       </div>
-      <h3>Align Item 5 center: ali-as-c</h3>
-      <div className="al-d-hw al-wrapper">
-        <div className="sp-m2">Item1</div>
-        <div className="sp-m2">Item2</div>
-        <div className="sp-m2 ">Item3</div>
-        <div className="sp-m2">Item4</div>
-        <div className="sp-m2 ali-as-c">Item5</div>
-        <div className="sp-m2">Item6</div>
+      <h3>Align Item 2 bottom: ali-as-b</h3>
+      <div className="al al-wrapper">
+        <div className="sp-m-2">Item1</div>
+        <div className="sp-m-2 ali-as-b ba-petrol">Item2</div>
+        <div className="sp-m-2">Item3</div>
+        <div className="sp-m-2">Item4</div>
+      </div>
+      <h3>Align Item 2 center: ali-as-c</h3>
+      <div className="al al-wrapper">
+        <div className="sp-m-2">Item1</div>
+        <div className="sp-m-2 ali-as-c ba-petrol">Item2</div>
+        <div className="sp-m-2">Item3</div>
+        <div className="sp-m-2">Item4</div>
+      </div>
+      <h3>Align Item 2 baseline: ali-as-bl</h3>
+      <div className="al al-wrapper">
+        <div className="sp-m-2">Item1</div>
+        <div className="sp-m-2 ali-as-bl ba-petrol">Item2</div>
+        <div className="sp-m-2">Item3</div>
+        <div className="sp-m-2">Item4</div>
+      </div>
+      <h3>Align Item 2 stretch: ali-as-s</h3>
+      <div className="al al-wrapper">
+        <div className="sp-m-2">Item1</div>
+        <div className="sp-m-2 ali-as-bl ba-petrol">Item2</div>
+        <div className="sp-m-2">Item3</div>
+        <div className="sp-m-2">Item4</div>
       </div>
     </div>
   ),
@@ -38,9 +55,9 @@ storiesOf("Alignitem (ali)", module).add(
   "Alignitem Grow (ali-g)",
   () => (
     <div className="al-dh">
-      <div className="ali-g-2 sp-p2 ba-petrol">ali-g-2</div>
-      <div className="ali-g-4 sp-p2 ba-silver">ali-g-3</div>
-      <div className="ali-g-1 sp-p2 ba-petrol20">ali-g-1</div>
+      <div className="ali-g-2 sp-p-2 ba-petrol">ali-g-2</div>
+      <div className="ali-g-4 sp-p-2 ba-silver">ali-g-3</div>
+      <div className="ali-g-1 sp-p-2 ba-petrol20">ali-g-1</div>
     </div>
   ),
   {
