@@ -1,4 +1,4 @@
-# Grid Dimension
+# Grid Fractals
 
 Set a CSS-Grid to an element.
 

@@ -1,9 +1,9 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
-import gridDimension from "./grid-dimension.md";
+import gridFractals from "./grid-fractals.md";
 
 storiesOf("Grid (gr)", module).add(
-  "Grid Dimension (gr-3, gr-h-3, gr-v-3)",
+  "Grid Fractals (gr-3, gr-h-3, gr-v-3)",
   () => (
     <div>
       <div className="gr-3 gr-g-1">
@@ -20,6 +20,6 @@ storiesOf("Grid (gr)", module).add(
     </div>
   ),
   {
-    notes: { markdown: gridDimension }
+    notes: { markdown: gridFractals }
   }
 );
