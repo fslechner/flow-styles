@@ -2,7 +2,7 @@ import React from "react";
 import { storiesOf } from "@storybook/react";
 import gridResponsive from "./grid-responsive.md";
 
-storiesOf("Grid (gr)", module).add(
+/* storiesOf("Grid (gr)", module).add(
   "Grid Responsive",
   () => (
     <div>
@@ -23,3 +23,4 @@ storiesOf("Grid (gr)", module).add(
     notes: { markdown: gridResponsive }
   }
 );
+ */

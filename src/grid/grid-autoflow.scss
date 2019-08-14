@@ -8,11 +8,11 @@
     .#{$prefix}#{$grid}-a#{$direction-name} {
       @if $direction-name == h {
         display: grid;
-        grid-auto-flow: column;
+        grid-auto-flow: row;
       }
       @if $direction-name == v {
         display: grid;
-        grid-auto-flow: row;
+        grid-auto-flow: column;
       }
     }
   }
