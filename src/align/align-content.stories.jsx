@@ -8,10 +8,10 @@ storiesOf("Align (al)", module).add(
     <div>
       <h3>Align Content Top: al-c-t</h3>
       <div className="al-c-t al-d-hw al-wrapper">
-        <div className="sp-m-1 sp-p-1 ba-petrol">Item1</div>
-        <div className="sp-m-1 sp-p-1 ba-petrol">Item2</div>
-        <div className="sp-m-1 sp-p-1 ba-petrol">Item3</div>
-        <div className="sp-m-1 sp-p-1 ba-petrol">Item4</div>
+        <div className="sp-m-1 sp-p-1 ba-petrol w-300">Item1</div>
+        <div className="sp-m-1 sp-p-1 ba-petrol w-300">Item2</div>
+        <div className="sp-m-1 sp-p-1 ba-petrol w-300">Item3</div>
+        <div className="sp-m-1 sp-p-1 ba-petrol w-300">Item4</div>
       </div>
 
       <h3>Align Content Center: al-c-c</h3>

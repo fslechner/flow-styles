@@ -7,8 +7,8 @@ storiesOf("Alignitem (ali)", module).add(
   () => (
     <div>
       <h1>flex-shrink</h1>
-      <h3>Shrink default: ali-s-1</h3>
-      <h3>Shrink not: ali-s-0</h3>
+      <h4>Shrink default: ali-s-1</h4>
+      <h4>Shrink not: ali-s-0</h4>
       <div className="al">
         <div className="ali-s-4 sp-p-2 ba-petrol w-300">ali-s-4</div>
         <div className="ali-s-2 sp-p-2 ba-petrol60 w-300">ali-s-2</div>
